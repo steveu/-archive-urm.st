@@ -1,0 +1,27 @@
+Title: Glasses Complete
+----
+id: glassescomplete
+----
+Date: 05-10-2010
+----
+Link: glassescomplete.co.uk
+----
+Text:
+
+I was involved throughout this custom E-commerce project; from initial meetings and specification to wireframes and architecture, through to singlehandedly developing the entire front end.
+
+I&#39;m personally very proud of making a complicated buying process as smooth and error free as possible.
+
+----
+wireframes: 80
+----
+graphics: 10
+----
+html: 70
+----
+script: 70
+----
+php: 100
+----
+ecom: 100
+----

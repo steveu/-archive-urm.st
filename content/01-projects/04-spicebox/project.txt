@@ -1,0 +1,27 @@
+Title: Rafi's Spicebox
+----
+id: spicebox
+----
+Date: 01-08-2010
+----
+Link: spicebox.co.uk
+----
+Text:
+
+As well as initial wireframing, I designed the basket &amp; checkout systems and integrated the payment gateway.
+
+I also developed a trade-only version with highly optimised ordering. Sales have been fantastic and the client delighted.
+
+----
+wireframes: 80
+----
+graphics: 10
+----
+html: 20
+----
+script: 20
+----
+php: 50
+----
+ecom: 100
+----

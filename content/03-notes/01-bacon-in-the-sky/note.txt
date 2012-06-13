@@ -1,0 +1,33 @@
+Title: Bacon In The Sky ... With Diamonds.
+----
+Date: 15-01-2012
+----
+When: afternoon
+----
+Temp: cold
+----
+Weather: clear
+----
+Location: York
+----
+Text:
+
+Hot damn I&apos;ve only launched a personal website! As something of a serial scrapper, I&apos;ve burnt through my fair share of designs, all preferable to the fat nothing my domain has worn for the last 5 years.
+
+Recently I&apos;ve begun to consider why I even want a website, and I believe this thought process has tipped me over the edge. Thus as an eternal reminder of my own personal solution to scrapping, I shall now <em>scratch my reasons into this HTML</em>.
+
+## Learn by doing
+
+I want to experiment with the bleeding edge techniques which I love about my job (more to come, but (link: /responsive.html text:responsive) and SVG are go). I shall also improve something I feel is a weakness; <em>my writing</em>, which whilst not a disaster, needs the polish which only consistently doing can bring.
+
+## Make waves
+
+No, not (link: https://wave.google.com/wave/?pli=1 text: that kind). The Web is constantly shifting. I will use Clearbar to document the work I am proud of, before it's inevitable demise.
+
+## Give something back
+
+I&apos;ve been making websites for about a decade, during which time I've consumed vast quantities of content, created by supremely talented people. Yet I never contribute, I don't even leave comments.
+
+This will change. Hold me to it.
+
+----

@@ -1,0 +1,97 @@
+Title: Percentages & Pixels Sitting in a Tree
+----
+Date: 30-01-2012
+----
+When: evening
+----
+Temp: cold
+----
+Weather: overcast
+----
+Location: York
+----
+Text:
+
+When building a _properly_ responsive layout, gutters set in % become inappropriately sized at both large and small window sizes. _Using some simple and pretty well supported CSS (IE8+) we can damn well fix that_.
+
+The obvious CSS for a liquid layout might be something like this;
+	
+	.sidebar {
+		width: 20%;
+		padding-left: 10%;
+		float: left;
+	}
+	.content {
+		width: 60%;
+		padding-left: 10%;
+		float: left;
+	}
+
+<a href="/content/03-notes/02-percentages-and-pixels/demo1.html" class="button demo">View demo</a>
+	
+The problem being; at iPad size the gap between columns is too small, and on your shiny new cinema display, it's gonna be too damn big!
+
+## Are we just gonna take this?
+
+_(Hell no)_
+
+What we actually need is the IE6 box model in (link: http://www.quirksmode.org/css/quirksmode.html text: Quirks mode), and _(here's one I prepared earlier!)_ CSS has that very option!
+
+	.sidebar, .content {
+		box-sizing: border-box;
+		padding-left: 24px;
+		float: left;
+	}
+	.sidebar {
+		width: 30%;
+	}
+	.content {
+		width: 70%;
+	}
+
+<a href="/content/03-notes/02-percentages-and-pixels/demo2.html" class="button demo">View demo</a>
+
+_This_ is gonna to give us a liquid layout, with fixed pixel gutters.
+
+To be fair this isn't perfectly supported. It requires the following prefixes;
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+
+and doesn't work in IE7 (although there is a (link: http://ie7-js.googlecode.com/svn/test/box-sizing.html text: polyfil for that)).
+
+Only you can decide how much of a problem this is, although I would say is that if you are using this technique for fluid responsive websites, serve it up inside a media query and the poor little devil gets fat nothing.
+
+There is an alternative; using `display: table` which does actually emulate this behaviour, but although this property is slightly better supported, I've found it to be a little unhelful due to additional effects; (link: http://www.456bereastreet.com/archive/201110/using_displaytable_has_semantic_effects_in_some_screen_readers/ text: accessibility problems) and (link: http://bugs.jquery.com/ticket/8301 text: jQuery issues).
+
+## Can we do better than pixels?
+
+We could use alternative pixel padding values within a series of media queries, so we could make use of the space afforded by larger screens with appropriate padding.
+
+My personal preference however is to set gutters in ems, and control the gutter widths using the base font size.
+
+	body {
+		font-size: 16px;
+	}
+	@media screen and (min-width: 768px) {
+		body {
+			font-size: 18px;
+		}
+	}
+	/* and onwards */
+
+	.sidebar, .content {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+		padding-left: 2em; /* either 32px, or 36px */
+		float: left;
+	}
+
+<a href="/content/03-notes/02-percentages-and-pixels/demo3.html" class="button demo">View demo</a>
+
+Boom. Go build.
+----

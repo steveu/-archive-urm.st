@@ -1,0 +1,24 @@
+Title: PHP Form Classes
+----
+id: php-form-class
+----
+Date: 05-10-2010
+----
+Link: glassescomplete.co.uk
+----
+Type: Gist
+----
+Text:
+
+I developed a set of PHP5 classes to enable the rapid production of form-based web applications.
+
+_Features include&hellip;_
+
+* Read/Write database scaffolding
+* Optional (<em>but sexy</em>) AJAX processing
+* Step based session forms
+* Sensible defaults + powerful config
+* Individual field and global error messages
+* Payment gateway integration for checkout forms
+
+There is a impoverished version of these classes on (link: https://github.com/clearbar/Form-Builder text:Github). I'm working on full featured code, but much is heavily integrated with a private codebase.

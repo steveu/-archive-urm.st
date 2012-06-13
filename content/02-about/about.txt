@@ -1,0 +1,27 @@
+Title: About
+----
+Text:
+
+# Hiya, I&#8217;m Steve.
+
+I&#8217;m a 32 year old interactive designer and web developer from York, where I live in Acomb with my beautiful <del>fiancé</del> <ins>wife</ins> Sarah.
+
+I love my music, particularly deep house, funk &amp; disco (occasional techno). I sometimes DJ in my living room.
+
+I enjoy sports, both watching and playing. I'm a season ticket holder at the mighty Bolton Wanderers.
+
+## What the heck is Clearbar?
+
+It used to be my web design business, but is now my personal website where I keep my portfolio of (link: work text: work), and sporadically post (link: notes text: notes).
+
+The website was helped by; (link: http://getkirby.com/ text: Kirby), (link: http://sass-lang.com/ text: Sass), (link: http://jquery.com/ text: jQuery), (link: http://compass-style.org/ text: Compass), (link: http://raphaeljs.com/ text: Raphaël), and was made with love.
+
+## Should we talk?
+
+I agree, try me at any of the following;
+
+* Email: steve @ my domain
+* Twitter: (twitter: @steveu)
+* Google Talk: stevechamp
+* GitHub: (link: https://github.com/clearbar text: github.com/clearbar)
+* LinkedIn: (link: http://www.linkedin.com/in/steveurmston text:linkedin.com/in/steveurmston)

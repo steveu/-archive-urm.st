@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Percentage and pixels - em gutters</title>
+
+    <style>
+    	
+    	body {
+    		background: #fff;
+    		margin: 0;
+            font-size: 16px;
+    		padding: 24px 0;
+    	}
+        @media screen and (min-width: 768px) {
+            body {
+                font-size: 18px;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            body {
+                font-size: 20px;
+            }
+        }
+
+        body {
+            padding: 2em 0;
+        }
+
+    	.sidebar, .content {
+    		padding-left: 2em;
+		    float: left;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+    	}
+    	.sidebar {
+		    width: 30%;
+		}
+		.content {
+		    width: 70%;
+            padding-right: 2em;
+		}
+
+        .column {
+             background: #eee;
+             border: 1px solid #ccc;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+	<section class="sidebar">
+
+        <div class="column">
+            <h1>Sidebar</h1>
+        </div>
+
+	</section>
+
+	<section class="content">
+        <div class="column">
+            <h1>Content</h1>
+        </div>
+
+	</section>
+
+</body>
+</html>
