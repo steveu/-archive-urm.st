@@ -16,10 +16,10 @@
 		<script>
             yepnope([
                 {
-                    load: 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js',
+                    load: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
                     complete: function () {
                         if (!window.jQuery) {
-                            yepnope('/assets/scripts/libs/jquery-1.6.4.min.js');
+                            yepnope('/assets/scripts/libs/jquery-1.7.2.min.js');
                         }
                     }
                 },
@@ -46,16 +46,6 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script>
-
-        <script type="text/javascript">
-            var disqus_shortname = 'clearbar';
-            (function () {
-                var s = document.createElement('script'); s.async = true;
-                s.type = 'text/javascript';
-                s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-            }());
         </script>
     </body>
 </html>

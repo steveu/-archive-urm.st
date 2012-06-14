@@ -198,51 +198,8 @@
 		head = html.find('head');
 		body = html.find('body');
 
-		/*
-		$('#show_contact_form').click(function(e) {
-			e.preventDefault();
-			$('#contact_form').reveal();
-		});
-		*/
-		body.noisy({
-		    'intensity' : 0.1, 
-		    'size' : 200, 
-		    'opacity' : 0.05, 
-		    'fallback' : '', 
-		    'monochrome' : false
-		}).css('background-color', '#eee');
-
-		//body.find("div.home_slideshow h1").fitText(1.9);
-
 		body.find('a.email').attr('href','mailto:steve@clearbar.com');
 
-		body.find('figure.full img').each(function() {
-			var file_src = $(this).attr('rel');
-			var figure = $(this).parent();
-
-			var image = document.createElement('img');
-
-	        $(image).load(function() {
-
-	        	$(this)
-	        		.hide()
-	        		.appendTo(figure)
-	        		.fadeIn('medium')
-	        	;
-
-	        }).attr('src', file_src);
-	        
-		});
-		/*
-		body.find('.intro').noisy({
-		    'intensity' : 0.64, 
-		    'size' : 200, 
-		    'opacity' : 0.05, 
-		    'fallback' : '', 
-		    'monochrome' : false
-		}).css('background-color', '#DE7719');
-		*/
-		
 		body.find('#skills_matrix').skillsMatrix();
 		
     });

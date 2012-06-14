@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 
     <!-- When (if) I add IE specific code, this will be useful -->
-    <?php echo js('assets/scripts/libs/modernizr-2.0.6.min.js') ?>
+    <?php echo js('assets/scripts/libs/modernizr.custom.89936.js') ?>
 
     <!-- Make text pretty -->
     <script type="text/javascript" src="http://use.typekit.com/fbd2arb.js"></script>
