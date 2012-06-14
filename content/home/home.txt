@@ -4,6 +4,8 @@ Title: Home
 
 Text: 
 
+# Hello there, I'm Steve, a freelance web designer & developer based in North Yorkshire. I deliver elegant interface design and creative front and back end code, for web and mobile.
+
 Yay! If you are seeing this, the installation of Kirby worked :)
 Now just give the links in the menu a try to see if URL redirection works as well.
 

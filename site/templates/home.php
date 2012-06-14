@@ -25,16 +25,6 @@ else {
 	echo '<div id="page">';
 ?>
 
-
-<div class="home_slideshow">
-	<div>
-
-		<h1>hello there</h1>
-
-	</div>
-</div>
-
-
 <?php echo kirbytext($page->text()) ?>
 
 </div>

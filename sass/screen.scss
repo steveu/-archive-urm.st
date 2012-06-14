@@ -15,7 +15,7 @@
 //	******************************************************************
 	
 // Vertical Rhythm
-$base-font-size: 16px;
+$base-font-size: 18px;
 $base-line-height: 24px;
 
 // Debug Vertical Grid
@@ -24,12 +24,12 @@ $grid-background-baseline-height: 1.5em;
 $grid-background-baseline-color: rgba(255, 0, 0, 0.4);
 
 // Typefaces
-$font-family: "dejarip-1", "dejarip-2", georgia, serif;
-$heading-font-family:"dejarip-1", "dejarip-2", sans-serif;
+$font-family: "dejarip", sans-serif;
+$heading-font-family: "adelle", serif;
 
 // Text Colors
 $text-color: #000;
-$heading-color: #54524E;
+$heading-color: #000;
 
 // Colors
 $orange: #DE7719;
@@ -57,7 +57,8 @@ html, body {
 body {
 	font-family: $font-family;
 	color: $text-color;
-	background: #eee;
+	background: #f0f0f0 url('/assets/images/80-70-3.png');
+	border-top: 8px solid $orange;
 
 	@if $debug == 1 {
 		@include baseline-grid-background();
@@ -81,8 +82,10 @@ body {
 //	Main Layout
 //	******************************************************************
 
-#wrapper {
+.wrapper {
 	max-width: $max-width;
+	margin: 0 auto;
+	padding: 0 $gutter;
 }
 
 
@@ -91,7 +94,77 @@ body {
 //	******************************************************************
 
 #top {
+	text-align: center;
+	background: #e3e3e3 url('/assets/images/80-70-3.png');
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: (($gutter * 3) - 10) 0 $gutter 0;
 
+	h1 {
+		padding: 0;
+		font-size: $base-font-size * 2.4;
+		line-height: 30px;
+		text-rendering: optimizeLegibility;
+		-moz-font-smoothing: antialiased;
+		-webkit-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		font-weight: 700;
+		@include text-shadow(0px 1px 2px rgba(255,255,255,0.7));
+
+		em {
+			display: block;
+			font-style: normal;
+			font-size: 16px;
+			font-weight: 500;
+			font-family: $font-family;
+			color: #777;
+			padding-top: 5px;
+		}
+		a {
+			color: #000;
+		}
+	}
+	a {
+		border: none;
+	}
+}
+
+nav.main {
+	font-family: $heading-font-family;
+	font-weight: 400;
+	ul {
+		list-style: none;
+		padding: $gutter $gutter 0;
+		max-width: 640px;
+		margin: 0 auto;
+		overflow: hidden;
+		font-size: 16px;
+	}
+	li {
+		float: left;
+		margin: 0;
+		padding: 0;
+		width: 25%;
+	}
+	a {
+		display: block;
+		padding: 0px 0 0px 0;
+		color: #000;
+		text-decoration: none;
+		text-align: center;
+		@include text-shadow(0px 1px 2px rgba(255,255,255,0.7));
+
+		&.active {
+			color: $orange;
+		}
+	}
+	span {
+		display: block;
+		margin: 0 auto 0px;
+		opacity: 1;
+		font-size: 38px;
+		line-height: 40px;
+	}
 }
 
 //	******************************************************************

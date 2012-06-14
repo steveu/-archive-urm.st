@@ -1,12 +1,30 @@
+@font-face {
+	font-family: 'IcoMoon';
+	src: url('/assets/fonts/IcoMoon.eot');
+	src: url('/assets/fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/IcoMoon.svg#IcoMoon') format('svg'),
+		url('/assets/fonts/IcoMoon.woff') format('woff'),
+		url('/assets/fonts/IcoMoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'IcoMoon';
+	content: attr(data-icon);
+	speak: none;
+}
+
+
 #{headings()} {
 	font-weight: normal;
 	color: $heading-color;
 	font-family: $heading-font-family;
-	font-weight: 300;
+	font-weight: 500;
 }
 
 h1 {
-	@include heading(($base-font-size * 1.6), 0, 1);
+	@include heading(($base-font-size * 1.4), 0, 1);
 }
 h2 {
 

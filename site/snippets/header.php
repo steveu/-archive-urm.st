@@ -26,7 +26,7 @@
     <?php echo js('assets/scripts/libs/modernizr.custom.89936.js') ?>
 
     <!-- Make text pretty -->
-    <script type="text/javascript" src="http://use.typekit.com/fbd2arb.js"></script>
+    <script type="text/javascript" src="http://use.typekit.com/mqf3dsx.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     
     <!-- CSS compressed SASS - source at https://github.com/clearbar/clearbar/blob/master/sass/screen.scss -->
@@ -36,24 +36,30 @@
 
 <body class="<?php echo $page->uri ?>">
 
-    <span id="stripe"></span>
-
-    <div id="wrapper">
-
-        <header class="clearfix" id="top">
+    <header id="top">
+        <div class="wrapper">
 
             <h1>
                 <a href="/"<?php if ($page->uri == 'home') echo ' class="active"'; ?>>
-                    clearbar
+                    Steven Urmston
+                    <em>Freelance Web &amp; <abbr title="User Interface">UI</abbr> Designer</em>
                 </a>
             </h1>
 
-            <nav>
+            <nav class="main">
                 <ul>
                 <?php foreach($pages->visible() AS $p): ?>
-                <li><a<?php echo ($p->isOpen()) ? ' class="active"' : '' ?> href="<?php echo $p->url() ?>"><?php echo html($p->title()) ?></a></li>
+                <li>
+                    <a<?php echo ($p->isOpen()) ? ' class="active"' : '' ?> href="<?php echo $p->url() ?>">
+                        <span aria-hidden="true" data-icon="&<?= html($p->icon()) ?>;"></span>
+                        <?= html($p->title()) ?>
+                    </a>
+                </li>
                 <?php endforeach ?>
                 </ul>
             </nav>
 
-        </header>
+        </div>
+    </header>
+
+    <div class="wrapper">

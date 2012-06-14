@@ -1,3 +1,5 @@
 Title: Work
 ----
+Icon: #x003a
+----
 Text:

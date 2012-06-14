@@ -1,5 +1,7 @@
 Title: About
 ----
+Icon: #x0044
+----
 Text:
 
 # Hiya, I&#8217;m Steve.

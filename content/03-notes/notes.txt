@@ -1,3 +1,5 @@
 Title: Notes
 ----
+Icon: #x0029
+----
 Text:
