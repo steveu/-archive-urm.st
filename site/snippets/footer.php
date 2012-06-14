@@ -12,33 +12,11 @@
 			</footer>
 
 		</div>
-		
-		<script>
-            yepnope([
-                {
-                    load: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
-                    complete: function () {
-                        if (!window.jQuery) {
-                            yepnope('/assets/scripts/libs/jquery-1.7.2.min.js');
-                        }
-                    }
-                },
-				{
-                    load: [
-						'/assets/scripts/libs/raphael.js'
-					]
-                },
-                {
-                    load: ['/assets/scripts/plugins.js', '/assets/scripts/master.js']
-                }
-            ]);
-        </script>
-      
+        
         <script type="text/javascript">
+
             var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-366835-5']);
-            _gaq.push(['_setDomainName', 'clearbar.com']);
-            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_setAccount', 'UA-32653177-1']);
             _gaq.push(['_trackPageview']);
 
             (function() {
@@ -46,6 +24,8 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
+
         </script>
+        
     </body>
 </html>

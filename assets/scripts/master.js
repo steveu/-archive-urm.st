@@ -201,6 +201,7 @@
 		body.find('a.email').attr('href','mailto:steve@clearbar.com');
 
 		body.find('#skills_matrix').skillsMatrix();
+
 		
     });
 
