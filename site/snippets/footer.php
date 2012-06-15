@@ -1,5 +1,9 @@
-        	<footer id="bottom">
-                
+            </div>
+		</div>
+
+        <footer id="bottom">
+            
+            <div class="wrapper">
                 <p class="contact">
                     I am <a href="http://twitter.com/#!/steveu">Twitter</a>. I also <a href="mailto:&#115;&#x74;&#101;&#118;&#x65;&#x40;&#x63;&#x6c;&#101;&#97;&#114;&#98;&#x61;&#x72;&#46;&#x63;&#111;&#x6d;">&#x65;&#109;&#x61;&#105;&#x6c;</a>.
                 </p>
@@ -8,10 +12,11 @@
                     <a class="cc" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
                     <img alt="Creative Commons License" src="/assets/images/cc_licence.png" width="88" height="31" /></a>
                 </p>
+            </div>
 
-			</footer>
+        </footer>
 
-		</div>
+
         
         <script type="text/javascript">
 

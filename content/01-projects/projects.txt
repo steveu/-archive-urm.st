@@ -1,5 +1,7 @@
-Title: Work
+Title: Projects
 ----
 Icon: #x003a
+----
+Fragment: projects
 ----
 Text:

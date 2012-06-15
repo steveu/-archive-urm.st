@@ -2,6 +2,8 @@ Title: About
 ----
 Icon: #x0044
 ----
+Fragment: about
+----
 Text:
 
 # Hiya, I&#8217;m Steve.

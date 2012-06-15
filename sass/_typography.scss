@@ -24,7 +24,7 @@
 }
 
 h1 {
-	@include heading(($base-font-size * 1.4), 0, 1);
+	@include heading(($base-font-size * 1.4), 1, 1);
 }
 h2 {
 

@@ -62,4 +62,6 @@
         </div>
     </header>
 
-    <div class="wrapper">
+    <div class="page">
+
+        <div class="wrapper">
