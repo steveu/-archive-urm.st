@@ -16,7 +16,9 @@
 
         </footer>
 
-
+        <?php echo js('assets/scripts/libs/zepto.min.js') ?>
+        <?php echo js('assets/scripts/libs/zepto.history.js') ?>
+        <?php echo js('assets/scripts/global.js') ?>
         
         <script type="text/javascript">
 

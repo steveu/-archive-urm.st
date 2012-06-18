@@ -1,5 +1,7 @@
 <?php snippet('header'); ?>
 
+<a href="#history_test">Test history</a>
+
 <section class="home">
 <?php echo kirbytext($page->text()) ?>
 </section>
@@ -8,11 +10,13 @@
 
 <?php foreach($pages->visible() AS $section) : ?>
 
+
 	<?php $items = $section->children()->visible()->flip(); ?>
 
 	<section class="<? echo $section->fragment(); ?>">
 		<?php echo kirbytext($section->text()); ?>
-
+		<?php
+		/*
 		<?php if($items && $items->count()): ?>
 				
 			<?php foreach($items AS $item): ?>
@@ -35,7 +39,7 @@
 			<?php endforeach; ?>
 
 		<?php endif; ?>
-
+		<?php */ ?>
 	</section>
 
 <?php endforeach; ?>
@@ -63,4 +67,5 @@
 <?php endforeach ?>
 </section>
 
+<h3 id="test_history">Test</h3>
 <?php snippet('footer') ?>

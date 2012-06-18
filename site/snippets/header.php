@@ -50,7 +50,7 @@
                 <ul>
                 <?php foreach($pages->visible() AS $p): ?>
                 <li>
-                    <a<?php echo ($p->isOpen()) ? ' class="active"' : '' ?> href="<?php echo $p->url() ?>">
+                    <a<?php echo ($p->isOpen()) ? ' class="active"' : '' ?> href="<?php echo $p->url() ?>" title="<?php echo $p->title() ?>">
                         <span aria-hidden="true" data-icon="&<?= html($p->icon()) ?>;"></span>
                         <?= html($p->title()) ?>
                     </a>
