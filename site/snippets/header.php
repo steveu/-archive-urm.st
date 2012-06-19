@@ -34,19 +34,19 @@
 
 </head>
 
-<body class="<?php echo $page->uri ?>">
+<body class="<?php echo $page->uri ?>" class="paused">
 
     <header id="top">
         <div class="wrapper">
 
             <h1>
-                <a href="/"<?php if ($page->uri == 'home') echo ' class="active"'; ?>>
+                <a href="/"<?php if ($page->uri == 'home') echo ' class="active"'; ?> title="Home">
                     Steven Urmston
                     <em>Freelance Web &amp; <abbr title="User Interface">UI</abbr> Designer</em>
                 </a>
             </h1>
 
-            <nav class="main">
+            <nav class="main fadeInDown">
                 <ul>
                 <?php foreach($pages->visible() AS $p): ?>
                 <li>
@@ -62,6 +62,6 @@
         </div>
     </header>
 
-    <div class="page">
+    <div id="page">
 
         <div class="wrapper">
