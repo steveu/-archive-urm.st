@@ -1,4 +1,4 @@
-Title: Notes
+Title: Notebook
 ----
 Icon: #x0029
 ----

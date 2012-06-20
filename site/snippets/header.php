@@ -46,6 +46,8 @@
                 </a>
             </h1>
 
+            <a class="hire">Hire Me</a>
+
             <nav class="main fadeInDown">
                 <ul>
                 <?php foreach($pages->visible() AS $p): ?>
@@ -58,6 +60,8 @@
                 <?php endforeach ?>
                 </ul>
             </nav>
+
+
 
         </div>
     </header>

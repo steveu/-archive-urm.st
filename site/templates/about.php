@@ -1,71 +1,48 @@
-<?php snippet('header') ?>
+<?php snippet('header'); ?>
 
-<?php $image = $page->images()->find('steve_urmston.jpg') ?>
+<section class="home">
+<h1><strong>Hello there</strong>, I'm Steve, a freelance web designer &amp; developer based in North Yorkshire. I deliver elegant interface design and creative front and back end code, for web and mobile.</h1>
+</section>
 
-<figure class="full">
-	<img rel="<?php echo $image->url() ?>" src="/assets/images/preload.gif" />
-	<div>
-	<figcaption>
-		Horizontal in <a href="http://www.watchthegardengrow.eu/the-garden-zadar">The Garden</a> in Zadar
-	</figcaption>
-	</div>
-</figure>
 
-<div id="page">
 
-	<section class="content">
-		<?php echo kirbytext($page->text()) ?>
+<?php $n = 0; ?>
+
+<?php foreach($pages->visible() AS $section) : ?>
+
+
+	<?php $items = $section->children()->visible()->flip(); ?>
+
+	<section class="<? echo $section->fragment(); ?>">
+		<?php echo kirbytext($section->text()); ?>
+		<?php
+		/*
+		<?php if($items && $items->count()): ?>
+				
+			<?php foreach($items AS $item): ?>
+				<article id="<?php echo $item->id(); ?>">
+
+					<h1><?php echo html($item->title()) ?></h1>
+					<figure>
+						<a href="">
+							<?php $image = $item->images()->find('screenshot.png') ?>
+							<img src="<?php echo $image->url() ?>" />
+						</a>
+					</figure>
+					<!--
+					<time datetime="<?php echo $item->date('c') ?>" pubdate="pubdate">
+						<?php echo $item->date('F Y') ?>
+					</time>
+					-->
+
+				</article>
+			<?php endforeach; ?>
+
+		<?php endif; ?>
+		<?php */ ?>
 	</section>
 
-	<aside class="blank">
+<?php endforeach; ?>
 
-		<h3>I got skills in&hellip; <i>(Sadly no sweet bike or moustache)</i></h3>
-		<div id="skills_matrix">
-			<table>
-				<thead>
-					<tr>
-						<th>Skill:</th>
-						<th>Ability:</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th>Graphic Design:</th>
-						<td>50%</td>
-					</tr>
-					<tr>
-						<th>Interaction Design:</th>
-						<td>70%</td>
-					</tr>
-					<tr>
-						<th><abbr>IA</abbr>:</th>
-						<td>60%</td>
-					</tr>
-					<tr>
-						<th>Research:</th>
-						<td>30%</td>
-					</tr>
-					<tr>
-						<th>PHP:</th>
-						<td>90%</td>
-					</tr>
-					<tr>
-						<th>Javascript:</th>
-						<td>80%</td>
-					</tr>
-					<tr>
-						<th>CSS:</th>
-						<td>100%</td>
-					</tr>
-					<tr>
-						<th>HTML:</th>
-						<td>100%</td>
-					</tr>
-				</tbody>		
-			</table>
-		</div>
-	</aside>
-
-</div>
 
 <?php snippet('footer') ?>
