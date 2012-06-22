@@ -45,9 +45,9 @@
                     <em>Freelance Web &amp; <abbr title="User Interface">UI</abbr> Designer</em>
                 </a>
             </h1>
-
+            <!--
             <a class="hire">Hire Me</a>
-
+            -->
             <nav class="main fadeInDown">
                 <ul>
                 <?php foreach($pages->visible() AS $p): ?>
