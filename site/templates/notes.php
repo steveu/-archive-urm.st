@@ -1,21 +1,8 @@
-<?php snippet('header') ?>
-
-<!--
-<div class="notes_search">
-
-	<p>This is the personal blog of Steve Urmston</p>
-
-	<form action="">
-
-		<fieldset>
-			<label>Search content:</label>
-			<input type="text" name="q" id="q" />
-		</fieldset>
-	</form>
-
-</div>
--->
-<div id="page">
+<?php
+if(!r::is_ajax()) {	
+	snippet('header');
+}
+?>
 
 	<section class="notes">
 
@@ -39,6 +26,8 @@
 
 	</section>
 
-</div>
-
-<?php snippet('footer') ?>
+<?php
+if(!r::is_ajax()) {	
+	snippet('footer');
+}
+?>

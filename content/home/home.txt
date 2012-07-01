@@ -3,4 +3,4 @@ Title: Home
 
 Text: 
 
-# **Hello there**, I'm Steve, a freelance web designer & developer based in North Yorkshire. I deliver elegant interface design and creative front and back end code, for web and mobile.
+# **Hello there**, I'm Steve, a freelance web designer & developer based in North Yorkshire. I design &amp; build interfaces for web &amp; mobile.

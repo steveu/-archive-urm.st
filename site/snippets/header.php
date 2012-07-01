@@ -36,36 +36,36 @@
 
 <body class="<?php echo $page->uri ?>" class="paused">
 
-    <header id="top">
-        <div class="wrapper">
+    <div class="container">
 
-            <h1>
-                <a href="/"<?php if ($page->uri == 'home') echo ' class="active"'; ?> title="Home">
-                    Steven Urmston
-                    <em>Freelance Web &amp; <abbr title="User Interface">UI</abbr> Designer</em>
-                </a>
-            </h1>
-            <!--
-            <a class="hire">Hire Me</a>
-            -->
-            <nav class="main fadeInDown">
-                <ul>
-                <?php foreach($pages->visible() AS $p): ?>
-                <li>
-                    <a<?php echo ($p->isOpen()) ? ' class="active"' : '' ?> href="<?php echo $p->url() ?>" title="<?php echo $p->title() ?>">
-                        <span aria-hidden="true" data-icon="&<?= html($p->icon()) ?>;"></span>
-                        <?= html($p->title()) ?>
+        <header id="top">
+            <div class="wrapper">
+
+                <h1>
+                    <a href="/"<?php if ($page->uri == 'home') echo ' class="active"'; ?> title="Home">
+                        Steven Urmston
+                        <em>Freelance Web &amp; <abbr title="User Interface">UI</abbr> Designer</em>
                     </a>
-                </li>
-                <?php endforeach ?>
-                </ul>
-            </nav>
+                </h1>
+            
+                <a class="hire"><span aria-hidden="true" data-icon="&#x35;"></span></a>
 
+                <nav class="main fadeInDown">
+                    <ul>
+                    <?php foreach($pages->visible() AS $p): ?>
+                    <li>
+                        <a<?php echo ($p->isOpen()) ? ' class="active"' : '' ?> href="<?php echo $p->url() ?>" title="<?php echo $p->title() ?>">
+                            <span aria-hidden="true" data-icon="&<?= html($p->icon()) ?>;"></span>
+                            <?= html($p->title()) ?>
+                        </a>
+                    </li>
+                    <?php endforeach ?>
+                    </ul>
+                </nav>
 
+            </div>
+        </header>
 
-        </div>
-    </header>
+        <div id="page">
 
-    <div id="page">
-
-        <div class="wrapper">
+            <div class="wrapper">

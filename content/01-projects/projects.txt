@@ -1,6 +1,6 @@
 Title: Projects
 ----
-Icon: #x003a
+Icon: #x25
 ----
 Fragment: projects
 ----

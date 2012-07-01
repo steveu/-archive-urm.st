@@ -6,7 +6,7 @@
         var
             
             $body = $(document.body),
-            $content = $body.find('#page'),
+            $content = $body.find('#page .wrapper'),
             rootUrl = History.getRootUrl(),
             scrollOptions = {
                 duration: 800,
@@ -39,6 +39,7 @@
             $(this).find('a[href^="/"],a[href^="'+rootUrl+'"]').unbind('click').bind('click',function(event){
                 var $this = $(this), url = $this.attr('href'), title = $this.attr('title')||null;
                 window.History.pushState(null,title,url);
+                //alert('history ')
                 event.preventDefault();
                 return false;
             });
@@ -65,7 +66,7 @@
             // Start Fade Out
             // Animating to opacity to 0 still keeps the element's height intact
             // Which prevents that annoying pop bang issue when loading in new content
-            $content.animate({opacity:0},800);
+            //$content.animate({opacity:0},800);
             
             // Ajax Request the Traditional Page
             $.ajax({
@@ -73,8 +74,16 @@
                 success: function(data, textStatus, jqXHR){
                     
                     $data = data;
+
+                    //alert($data);
                     
+                    //var pageHTML = documentHtml($data);
+
+                    //alert(pageHTML);
+
+
                     // Update the title
+                    /*
                     document.title = $data.find('.document-title:first').text();
                     try {
                         document.getElementsByTagName('title')[0].innerHTML = document.title.replace('<','&lt;').replace('>','&gt;').replace(' & ',' &amp; ');
@@ -92,6 +101,14 @@
                         reinvigorate.ajax_track(url);
                         // ^ we use the full url here as that is what reinvigorate supports
                     }
+                    */
+
+                    // update the page html
+                    //alert($data);
+
+                    $content.html($data);
+                    $content.animate({opacity:1},800);
+                    $body.ajaxify();
                 },
                 error: function(jqXHR, textStatus, errorThrown){
                     document.location.href = url;

@@ -1,7 +1,11 @@
-<?php snippet('header'); ?>
+<?php
+if(!r::is_ajax()) {	
+	snippet('header');
+}
+?>
 
 <section class="home">
-<?php echo kirbytext($page->text()) ?>
+	<?php echo kirbytext($page->text()) ?>
 </section>
 
 <?php $n = 0; ?>
@@ -12,35 +16,30 @@
 	<?php $items = $section->children()->visible()->flip(); ?>
 
 	<section class="<? echo $section->fragment(); ?>">
-		<?php echo kirbytext($section->text()); ?>
-		<?php
-		/*
 		<?php if($items && $items->count()): ?>
 				
 			<?php foreach($items AS $item): ?>
 				<article id="<?php echo $item->id(); ?>">
-
-					<h1><?php echo html($item->title()) ?></h1>
+					<a href="<?=$item->url()?>">
+					<!--<h1><?php echo html($item->title()) ?></h1>-->
 					<figure>
-						<a href="">
-							<?php $image = $item->images()->find('screenshot.png') ?>
-							<img src="<?php echo $image->url() ?>" />
-						</a>
+		
+						<?php $image = $item->images()->find('screenshot.png') ?>
+						<img src="<?php echo $image->url() ?>" />
+				
 					</figure>
-					<!--
-					<time datetime="<?php echo $item->date('c') ?>" pubdate="pubdate">
-						<?php echo $item->date('F Y') ?>
-					</time>
-					-->
-
+					</a>	
 				</article>
 			<?php endforeach; ?>
 
 		<?php endif; ?>
-		<?php */ ?>
 	</section>
 
 <?php endforeach; ?>
 
 
-<?php snippet('footer') ?>
+<?php
+if(!r::is_ajax()) {	
+	snippet('footer');
+}
+?>

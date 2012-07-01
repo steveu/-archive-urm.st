@@ -1,4 +1,8 @@
-<?php snippet('header') ?>
+<?php
+if(!r::is_ajax()) {	
+	snippet('header');
+}
+?>
 
 <div id="page">
 
@@ -32,4 +36,8 @@
 
 </div>
 
-<?php snippet('footer') ?>
+<?php
+if(!r::is_ajax()) {	
+	snippet('footer');
+}
+?>

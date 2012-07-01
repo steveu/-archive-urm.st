@@ -1,5 +1,8 @@
-<?php snippet('header') ?>
-
+<?php
+if(!r::is_ajax()) {	
+	snippet('header');
+}
+?>
 <div id="page">
 	
 	<aside class="vcard">
@@ -25,4 +28,8 @@
 
 </div>
 
-<?php snippet('footer') ?>
+<?php
+if(!r::is_ajax()) {	
+	snippet('footer');
+}
+?>

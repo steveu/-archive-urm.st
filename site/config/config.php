@@ -40,7 +40,7 @@ Make sure to write the url without a trailing slash.
  
 */
 
-c::set('url', false);
+c::set('url', '/');
 
 
 /* 
@@ -146,7 +146,7 @@ or markdown extra: http://michelf.com/projects/php-markdown/extra/
 */
 
 c::set('markdown.break', true);
-c::set('markdown.extra', false);
+c::set('markdown.extra', true);
 
 
 /*

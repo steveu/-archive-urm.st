@@ -1,30 +1,20 @@
 Title: About
 ----
-Icon: #x0044
+Icon: #x21
 ----
 Fragment: about
 ----
 Text:
 
-# Hiya, I&#8217;m Steve.
+## The lowdown
 
-I&#8217;m a 32 year old interactive designer and web developer from York, where I live in Acomb with my beautiful <del>fiancé</del> <ins>wife</ins> Sarah.
+With over 8 years freelance and agency experience, I've worn many hats, working with all kinds of websites and applications.
 
-I love my music, particularly deep house, funk &amp; disco (occasional techno). I sometimes DJ in my living room.
+I'm available for contract and freelance work, complimenting your existing team, or driving projects from research, through production-ready code.
 
-I enjoy sports, both watching and playing. I'm a season ticket holder at the mighty Bolton Wanderers.
+Have car, will travel.
 
-## What the heck is Clearbar?
-
-It used to be my web design business, but is now my personal website where I keep my portfolio of (link: work text: work), and sporadically post (link: notes text: notes).
-
-The website was helped by; (link: http://getkirby.com/ text: Kirby), (link: http://sass-lang.com/ text: Sass), (link: http://jquery.com/ text: jQuery), (link: http://compass-style.org/ text: Compass), (link: http://raphaeljs.com/ text: Raphaël), and was made with love.
-
-## Should we talk?
-
-I agree, try me at any of the following;
-
-* Email: steve @ my domain
+* Email: steve@urm.st
 * Twitter: (twitter: @steveu)
 * Google Talk: stevechamp
 * GitHub: (link: https://github.com/clearbar text: github.com/clearbar)

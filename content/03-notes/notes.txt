@@ -1,5 +1,5 @@
 Title: Notebook
 ----
-Icon: #x0029
+Icon: #x2b
 ----
 Text:

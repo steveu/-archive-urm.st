@@ -1,6 +1,6 @@
 Title: Contact
 ----
-Icon: #x003e
+Icon: #x26
 ----
 Fragment: contact
 ----
