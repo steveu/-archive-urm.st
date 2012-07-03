@@ -12,10 +12,16 @@ if(!r::is_ajax()) {
 
 <?php foreach($pages->visible() AS $section) : ?>
 
+	
 
 	<?php $items = $section->children()->visible()->flip(); ?>
 
+	
+
 	<section class="<? echo $section->fragment(); ?>">
+
+		<?php if ($section->fragment() == 'projects') : ?>
+		
 		<?php if($items && $items->count()): ?>
 				
 			<?php foreach($items AS $item): ?>
@@ -33,7 +39,11 @@ if(!r::is_ajax()) {
 			<?php endforeach; ?>
 
 		<?php endif; ?>
+
+		<?php endif; ?>
 	</section>
+
+
 
 <?php endforeach; ?>
 

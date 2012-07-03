@@ -5,9 +5,10 @@ if(!r::is_ajax()) {
 ?>
 
 
-
 <section class="about">
-	<?php echo kirbytext($page->text()); ?>
+	<div class="single">
+		<?php echo kirbytext($page->text()); ?>
+	</div>
 </section>
 
 <?php

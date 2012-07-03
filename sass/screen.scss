@@ -16,11 +16,11 @@
 	
 // Vertical Rhythm
 $base-font-size: 18px;
-$base-line-height: 26px;
+$base-line-height: 28px;
 
 // Debug Vertical Grid
 $debug: 0;
-$grid-background-baseline-height: 1.444444444em;
+$grid-background-baseline-height: 1.555555556em;
 $grid-background-baseline-color: rgba(255, 0, 0, 0.4);
 
 // Typefaces
@@ -37,13 +37,13 @@ $orange: #DE7719;
 $light-blue: #E7F3FF;
 
 // Grid
-$gutter: 26px;
+$gutter: 28px;
 $max-width: 760px;
 $site-max-width: 960px;
 
 $total-columns: 12;
-$gutter-width: 1.9em;
-$grid-padding: 1.444444444em;
+$gutter-width: 2.1em;
+$grid-padding: 1.555555556em;
 
 $container-width: 960px;
 
@@ -78,6 +78,7 @@ body {
 	@if $debug == 1 {
 		@include baseline-grid-background();
 		background-color: #fff;
+		background-position: 0px 8px;
 	}
 
 	-webkit-text-size-adjust: 100%;
@@ -261,7 +262,7 @@ a.hire {
 	right: $gutter;
 	line-height: 29px;
 	height: 35px;
-	width: 44px;
+	width: 42px;
 	@include text-shadow(
 		0px 1px 1px lighten($orange, 20)
 	);
@@ -329,9 +330,9 @@ a.hire {
 		position: absolute;
 		height: 0px;
 		width: 0px;
-		border-width: 11px 11px;
+		border-width: 10px 10px;
 		border-style: solid;
-		bottom: -16px;
+		bottom: -15px;
 		left: 0px;
 		border-color:  $orange #F7F7F7 #F7F7F7 $orange ;
 		@include transform(scale(1, 0.5));
@@ -366,12 +367,34 @@ section.home {
 	h1 {
 		@include prefix(1);
 		@include span-columns(10,12);
-
+		@include heading(($base-font-size * 1.4), 0, 0, 1.444444444);
 		padding-top: 0;
 		padding-bottom: 0;
+
 	}
 }
 
+section.about {
+	@include span-columns(20,24);
+	@include pad(1,1);
+	//background: red;
+	//padding-left: $gutter;
+	//padding-right: $gutter;
+	//@include post(3);
+	//@include omega;
+
+	//margin-left: columns(1,12);
+	//margin-right: columns(1,12);
+
+	div.single {
+
+	}
+}
+
+div.single {
+	padding-left: columns(1,12);
+	padding-right: columns(1,12);
+}
 
 //	******************************************************************
 //	Portfolio
@@ -403,6 +426,38 @@ section.projects {
 
 	}
 }
+
+.video {
+	@include span-columns(3,9);
+	padding-top: 6px;
+	padding-bottom: 21px;
+}
+.videoBorder {
+	width: 100%;
+	//height: columns(6,12);
+	background: #fff;
+	padding: 0;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	//border: 1px solid #ccc;
+	background: yellow;
+
+	position: relative;
+	padding-bottom: 100%;
+	height: 0;
+}
+.videoPlayer {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+	-webkit-mask-box-image: url('/assets/images/rect.svg');
+}
+video {
+}
+
 
 
 //	******************************************************************

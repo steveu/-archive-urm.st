@@ -34,7 +34,7 @@
 
 </head>
 
-<body class="<?php echo $page->uri ?>" class="paused">
+<body class="paused">
 
     <div class="container">
 
@@ -67,5 +67,3 @@
         </header>
 
         <div id="page">
-
-            <div class="wrapper">

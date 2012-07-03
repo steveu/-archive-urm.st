@@ -6,16 +6,35 @@ Fragment: about
 ----
 Text:
 
-## The lowdown
 
-With over 8 years freelance and agency experience, I've worn many hats, working with all kinds of websites and applications.
 
-I'm available for contract and freelance work, complimenting your existing team, or driving projects from research, through production-ready code.
 
-Have car, will travel.
+# The Low Down
 
-* Email: steve@urm.st
-* Twitter: (twitter: @steveu)
-* Google Talk: stevechamp
-* GitHub: (link: https://github.com/clearbar text: github.com/clearbar)
-* LinkedIn: (link: http://www.linkedin.com/in/steveurmston text:linkedin.com/in/steveurmston)
+<div class="video">
+
+<div class="videoBorder">
+	<div class="videoPlayer">
+		<video id="videoShowcase" poster="" autoplay="autoplay" autobuffer="autobuffer" loop="loop" class="shown mask" style="display: block; " muted="true">
+			<source src="/assets/steve.m4v" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" width="200%" height="200%">
+			<source src="/assets/steve.mov" width="200%" height="200%">
+		</video>
+	</div>
+</div>
+</div>
+
+I've worn many a hat in my nine years making websites for agencies and increasingly for myself, developing a broad range of skills in various design disciplines, user research and both front &amp; back-end code.
+
+I'm available for contract and freelance work, integrated into your existing team, or driving projects from research through production-ready code. I work from home, and at various drop-in offices and coffeehouses in York and Leeds. I'm happy to work with you on site. Have car, will travel &hellip;within reason ;)
+
+Think I'd be a good fit for your business? Please <a href="/contact">get in touch</a>, as I'd love to chat!
+
+# Elsewhere
+
+* Twitter: @steveu
+* GitHub: <a href="https://github.com/clearbar">github.com/clearbar</a>
+* LinkedIn: linkedin.com/in/steveurmston
+* Zerply: 
+* Dribbble
+
+# Personal

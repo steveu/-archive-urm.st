@@ -6,7 +6,7 @@
         var
             
             $body = $(document.body),
-            $content = $body.find('#page .wrapper'),
+            $content = $body.find('#page'),
             rootUrl = History.getRootUrl(),
             scrollOptions = {
                 duration: 800,
