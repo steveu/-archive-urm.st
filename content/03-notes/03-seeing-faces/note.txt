@@ -1,4 +1,4 @@
-Title: You Are Such a Clever Cat.
+Title: Seeing Faces Everywhere
 ----
 Date: 25-03-2012
 ----
@@ -16,15 +16,13 @@ Our brains are hardwired to attribute human features and behaviour to many thing
 
 Despite being able to rationally detach these human characteristics, we can't help but see them anyway. *We see faces everywhere we look*.
 
-<figure>(image: plug_faces.jpg)</figure>
-
-## Working for us
+<figure class="center">(image: plug_faces.jpg)</figure>
 
 This condition ((link: http://en.wikipedia.org/wiki/Anthropomorphism text: anthropomorphism) for those who like to sound clever) can be used by designers to give inanimate objects personality and to guide a positive user experience around digital products and services, *which we not only come to see as allies, but in many cases as friends*.
 
-Can you imagine treating this little dude as you might treat your desktop printer? (which im my case is a toxic combination of disdain and rage)
+Can you imagine treating this little dude as you might treat your desktop printer? (which in my case is a toxic combination of disdain and rage)
 
-<figure class="left">(image: little_print.jpg)</figure>
+<figure class="">(image: little_print.jpg)</figure>
 
 Or throwing a cup this cute in a non-recycling bin?
 
@@ -32,9 +30,7 @@ Or throwing a cup this cute in a non-recycling bin?
 
 Nope though not. These designs can strongly infulence our reactions and behaviour toward the objects around us.
 
-## So, should I draw a face on my next website?
-
-*Yes this is a rhetorical question*. Clearly there are levels, and not everything needs a face.
+So, should I draw a face on my next website? *Yes this is a rhetorical question*. Clearly there are levels, and not everything needs a face.
 
 I&#8217;ve made use of this in my own work in more subtly ways, recently on a website for (link: http://cliffdesign.co.uk/ text: Cliff Design) where the open/close functionality uses animation to transform a 50 pixel green square into a little character who fetches content at your call.
 

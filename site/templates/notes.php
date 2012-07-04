@@ -4,27 +4,29 @@ if(!r::is_ajax()) {
 }
 ?>
 
-	<section class="notes">
+<section class="notes">
 
-		<?php foreach($page->children()->visible()->flip() as $item): ?>
 
-		<article>
+	<?php foreach($page->children()->visible()->flip() as $item): ?>
 
-			<aside class="meta">
-				<time datetime="<?php echo $item->date('c') ?>" pubdate="pubdate"><?php echo $item->date('l j<\s\up>S</\s\up> F, Y') ?></time>
-				<p class="comments"><a href="<?php echo $item->url() ?>#disqus_thread">0 Comments</a></p>
-			</aside>
+	<article>
 
-			<div class="post">
-				<h1><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></h1>
-				<?php echo kirbytext($item->text()) ?>
-			</div>
-			
-		</article>
+		<div class="padding">
 
-		<?php endforeach ?>
+			<h1><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></h1>
+			<time datetime="<?php echo $item->date('c') ?>" pubdate="pubdate">
+				<?php echo $item->date('j F Y') ?>
+			</time>
+			<?php echo kirbytext($item->text()) ?>
+		
+		</div>
 
-	</section>
+	</article>
+
+	<?php endforeach ?>
+
+
+</section>
 
 <?php
 if(!r::is_ajax()) {	

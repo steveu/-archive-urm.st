@@ -6,7 +6,7 @@ if(!r::is_ajax()) {
 
 
 <section class="about">
-	<div class="single">
+	<div class="padding">
 		<?php echo kirbytext($page->text()); ?>
 	</div>
 </section>

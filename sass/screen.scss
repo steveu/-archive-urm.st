@@ -375,8 +375,10 @@ section.home {
 }
 
 section.about {
+	
 	@include span-columns(20,24);
 	@include pad(1,1);
+	//background: red;
 	//background: red;
 	//padding-left: $gutter;
 	//padding-right: $gutter;
@@ -391,9 +393,60 @@ section.about {
 	}
 }
 
-div.single {
+div.padding {
 	padding-left: columns(1,12);
 	padding-right: columns(1,12);
+}
+
+section.notes {
+
+	article {
+		@include span-columns(20,24);
+		@include pad(1,1);
+		padding-bottom: rhythm(2);
+
+		@include box-shadow(
+			inset 0px 1px 1px 0px #fff,
+			inset 0px -1px 0px 0px rgba(0,0,0,0.2)
+		);
+
+		//@include trailing-border(1px, 0, $base-font-size, solid);
+	}
+
+	h1 {
+		//padding-bottom: 0;
+		a {
+			border: none;
+			color: $text-color;
+		}
+	}
+
+	time {
+		display: block;
+		text-align: center;
+		padding-bottom: rhythm(1);
+		font-weight: 500;
+		color: #777;
+		-moz-font-smoothing: antialiased;
+		-webkit-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		//font-variant: small-caps;
+		//text-transform: uppercase;
+	}
+
+	figure {
+		text-align: center;
+		padding-left: columns(1,12);
+		padding-right: columns(1,12);
+
+		@include box-shadow(
+			0px 0px 1px 0px #fff
+		);
+		img {
+			margin: 0 auto;
+		}
+	}
+
 }
 
 //	******************************************************************
@@ -428,29 +481,30 @@ section.projects {
 }
 
 .video {
-	@include span-columns(3,9);
+	@include span-columns(4,9);
 	padding-top: 6px;
 	padding-bottom: 21px;
 }
 .videoBorder {
 	width: 100%;
 	//height: columns(6,12);
-	background: #fff;
-	padding: 0;
-	border-radius: 50%;
-	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	//background: #fff;
+	//padding: 8px;
+	//border-radius: 50%;
+	//box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
 	//border: 1px solid #ccc;
-	background: yellow;
+	//background: yellow;
 
 	position: relative;
-	padding-bottom: 100%;
+	padding-bottom: 74%;
 	height: 0;
 }
 .videoPlayer {
 	position: absolute;
 	top: 0;
 	left: 0;
-
+	//padding: 8px;
+	//background: #fff;
 	width: 100%;
 	height: 100%;
 	-webkit-mask-box-image: url('/assets/images/rect.svg');
@@ -472,6 +526,15 @@ section.notes {
 }
 
 
+section.contact {
+	@include span-columns(20,24);
+	@include pad(1,1);
+}
+
+aside.hcard {
+	padding: rhythm(1);
+	background: #fff;
+}
 
 //	******************************************************************
 //	Footer

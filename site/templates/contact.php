@@ -3,11 +3,13 @@ if(!r::is_ajax()) {
 	snippet('header');
 }
 ?>
-<div id="page">
+<section class="contact">
 	
-	<aside class="vcard">
-		<div class="hcard">
-			<h2>I like mail, get in touch</h2>
+	<div class="padding">
+
+		<?php echo kirbytext($page->text()) ?>
+		
+		<aside class="hcard">
 			<dl>
 				<dt>Email:</dt>
 				<dd>steve at domain dot com</dd>
@@ -16,17 +18,11 @@ if(!r::is_ajax()) {
 				<dt>Twitter:</dt>
 				<dd>@steveu</dd>
 			</dl>
-		</div>
+		</aside>
 		
-	</aside>
+	</div>
 
-	<section class="content">
-		<?php echo kirbytext($page->text()) ?>
-	</section>
-
-	
-
-</div>
+</section>
 
 <?php
 if(!r::is_ajax()) {	
