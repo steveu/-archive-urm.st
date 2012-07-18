@@ -4,7 +4,7 @@ Icon: #x26
 ----
 Fragment: contact
 ----
+Heading: Making a brew? I'd love to chat!
+----
 Text:
-
-# Making a brew? I'd love to chat!
-
+----

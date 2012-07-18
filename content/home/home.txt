@@ -1,6 +1,9 @@
-Title: Home
+Title: Hello
 ----
+Heading: 
 
-Text: 
+**Hello there**, I'm Steve, a freelance web designer & developer based in North Yorkshire. *I design and build interfaces for web &amp; mobile*.
 
-# **Hello there**, I'm Steve, a freelance web designer & developer based in North Yorkshire. I design &amp; build interfaces for web &amp; mobile.
+----
+Text:
+----

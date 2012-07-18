@@ -1,55 +1,23 @@
-<?php
-if(!r::is_ajax()) {	
-	snippet('header');
-}
-?>
+<?php snippet('header'); ?>
 
 <section class="projects">
 
 	<?php foreach($page->children()->visible()->flip() as $item): ?>
 
-	<article id="<?php echo $item->id(); ?>">
+		<article>
+			<a href="<?=$item->url()?>">
+				<figure>
+					<?php $image = $item->images()->find('screenshot.png') ?>
+					<img src="<?php echo $image->url() ?>" />
+				</figure>
 
-		<div class="meta">
-
-				
-
-				<figure class="">
-	
-
-
-
-				<?php $image = $item->images()->find('screenshot.png') ?>
-
-				<img src="<?php echo $image->url() ?>" />
-
-			</a>
-
-			
-		</figure>
-
-		<h2><?php echo html($item->title()) ?></h2>
-					<time datetime="<?php echo $item->date('c') ?>" pubdate="pubdate">
-						<?php echo $item->date('F Y') ?>
-					</time>
-
-					<?php echo kirbytext($item->text()) ?>
-
-
-		</div>
-
-		
-
-		
-
-	</article>
+				<h2><?php echo html($item->title()) ?></h2>
+				<?php echo kirbytext($item->intro()) ?>
+			</a>	
+		</article>
 
 	<?php endforeach ?>
 
 </section>
 
-<?php
-if(!r::is_ajax()) {	
-	snippet('footer');
-}
-?>
+<?php snippet('footer'); ?>

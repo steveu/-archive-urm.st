@@ -6,9 +6,14 @@ Date: 01-06-2011
 ----
 Link: doineedavet.co.uk
 ----
+Intro:
+
+I designed and built this vet advice site. Includes finely tuning search, and admin baked directly into the front-end.
+
+----
 Text:
 
-Redesign of my own work for this vet advice site. Included fine tuning the question search, administration baked directly into the front-end.
+Having designed the previous iteration, I approached this redesign both with insight into what the site's inner workings, and with a certain amount of caution to avoid irritating or putting off existing users.
 
 Dramatically increased the volume of posts, and encouraged micro payments and donations.
 

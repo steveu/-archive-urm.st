@@ -1,55 +1,29 @@
-<?php
-if(!r::is_ajax()) {	
-	snippet('header');
-}
-?>
+<?php snippet('header'); ?>
 
-<section class="home">
-	<?php echo kirbytext($page->text()) ?>
-</section>
 
-<?php $n = 0; ?>
+<h1 class="title"><?=markdown($page->heading())?></h1>
 
-<?php foreach($pages->visible() AS $section) : ?>
 
+<?php $projects = $pages->findByTitle('Projects'); ?>
+<?php $items = $projects->children()->visible()->flip(); ?>
+<?php if($items && $items->count()): ?>
 	
+	<section class="home_projects">
 
-	<?php $items = $section->children()->visible()->flip(); ?>
+	<?php foreach($items AS $item): ?>
+		<article>
+			<a href="/projects/<?=$item->id()?>">
+				<figure>
+					<?php $image = $item->images()->find('screenshot.png') ?>
+					<img src="<?php echo $image->url() ?>" alt="<?=$item->title()?>" />
+				</figure>
+			</a>	
+		</article>
+	<?php endforeach; ?>
 
-	
-
-	<section class="<? echo $section->fragment(); ?>">
-
-		<?php if ($section->fragment() == 'projects') : ?>
-		
-		<?php if($items && $items->count()): ?>
-				
-			<?php foreach($items AS $item): ?>
-				<article id="<?php echo $item->id(); ?>">
-					<a href="<?=$item->url()?>">
-					<!--<h1><?php echo html($item->title()) ?></h1>-->
-					<figure>
-		
-						<?php $image = $item->images()->find('screenshot.png') ?>
-						<img src="<?php echo $image->url() ?>" />
-				
-					</figure>
-					</a>	
-				</article>
-			<?php endforeach; ?>
-
-		<?php endif; ?>
-
-		<?php endif; ?>
 	</section>
 
+<?php endif; ?>
 
 
-<?php endforeach; ?>
-
-
-<?php
-if(!r::is_ajax()) {	
-	snippet('footer');
-}
-?>
+<?php snippet('footer'); ?>

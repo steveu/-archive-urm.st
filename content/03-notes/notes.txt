@@ -1,4 +1,6 @@
-Title: Notebook
+Title: Notes
+----
+Fragment: notes
 ----
 Icon: #x2b
 ----

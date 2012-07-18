@@ -23,20 +23,10 @@ Text:
 </div>
 </div>
 
-I've worn many a hat in my nine years making websites for various agencies and increasingly for myself, developing a broad range of skills in different design disciplines, with a particular focus on interaction design. I've also picked up skills in user centred design with a Masters degree in HCI.
+I've worn many a hat in my nine years making websites for various agencies and increasingly for myself. Building up a broad range of skills in different design disciplines, with a particular focus on interaction design, developed during a recent <a ref="">Masters degree in <abbr title="Human Computer Interaction">HCI</abbr></a>.
 
-I have expert skills in HTML, CSS and JavaScript, and a deep understading of both desktop and mobile platforms. I'm highly experienced using PHP including knowledge of many popular frameworks and CMS systems. I also have some experience using Ruby and iOS development in Objective C.
+Technically I have expert skills in HTML, CSS and JavaScript, and a deep understading of both desktop and mobile platforms. I'm highly experienced using PHP, with knowledge of many popular frameworks and CMS systems, but also comfortable developing OOP systems from scratch. I have experience using Ruby (Rails), some iOS development work in Objective C, and am increasingly infatuated with node.js.
 
-I'm available for contract and freelance work, remotely or working with you on site. Have car, will travel &hellip;within reason ;)
+I'm available for contract and freelance work, either remotely, or working with you on site. Have car will travel &hellip;within reason.
 
 Think I'd be a good fit for your business? Please <a href="/contact">get in touch</a>, as I'd love to chat!
-
-# Elsewhere
-
-* Twitter: @steveu
-* GitHub: <a href="https://github.com/clearbar">github.com/clearbar</a>
-* LinkedIn: linkedin.com/in/steveurmston
-* Zerply: 
-* Dribbble
-
-# Personal

@@ -1,17 +1,5 @@
-<?php
-if(!r::is_ajax()) {	
-	snippet('header');
-}
-?>
-
-<div id="page">
+<?php snippet('header'); ?>
 
 <?php echo kirbytext($page->text()) ?>
 
-</div>
-
-<?php
-if(!r::is_ajax()) {	
-	snippet('footer');
-}
-?>
+<?php snippet('footer'); ?>

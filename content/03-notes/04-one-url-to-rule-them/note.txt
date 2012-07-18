@@ -1,0 +1,21 @@
+Title: One URL to Rule Them All
+----
+Date: 15-07-2012
+----
+When: evening
+----
+Temp: fresh
+----
+Weather: windy
+----
+Location: York
+----
+Text:
+
+I stumbled into a bug in Chrome. Thing is, I say bug, but no longer think it so&hellip;more a philosophical quandry and a potential flashpoint in the battle for the Web.
+
+*It's possible I've over stated this.*
+
+So when fetching content via AJAX, rather than a standard page request (hello geeks), it is sensible to also update the URL, therby avoiding breaking the browser back and forward buttons.
+
+----

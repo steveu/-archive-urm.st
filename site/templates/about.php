@@ -1,18 +1,12 @@
-<?php
-if(!r::is_ajax()) {	
-	snippet('header');
-}
-?>
-
+<?php snippet('header'); ?>
 
 <section class="about">
 	<div class="padding">
-		<?php echo kirbytext($page->text()); ?>
+		<h1 class="title"><?=$page->title()?></h1>
+		<div class="content">
+			<?php echo kirbytext($page->text()); ?>
+		</div>
 	</div>
 </section>
 
-<?php
-if(!r::is_ajax()) {	
-	snippet('footer');
-}
-?>
+<?php snippet('footer'); ?>

@@ -6,11 +6,24 @@ Date: 22-03-2012
 ----
 Link: cliffdesign.co.uk
 ----
+Intro:
+
+Single page site featuring tidy interactions, developed from a flat designer comp.
+
+----
 Text:
 
-Single page site featuring tidy interactions, developed from a flat designer comp. Includes humanised touches such as behaviour on portfolio items, and contact form chat-back.
+Tasked with adding some interactive flair to a flat PSD, I revved up the CSS transitions to create a single page site that packs an interactive punch, whilst expertly avoiding the sea-sick scrolling effects often found on this kind of project.
 
-Built in the browser. Uses the excellent (link: http://getkirby.com/ text: Kirby) as a backend (big fan!).
+I built the backend using (link: http://getkirby.com/ text: Kirby) (big fan) so highly flexible content could be updated with ease. For example, the portfolio items use various different liquid layouts, depending on the amount of images placed in particular folders.
+
+I'm very proud of my work on the open/close behaviour on portfolio items.
+
+<figure class="center"><a href="http://cliffdesign.co.uk/">(image: open-close.png)</a></figure>
+
+And the chat-back the enquiry form gives you, as you complete different fields.
+
+<figure class="center"><a href="http://cliffdesign.co.uk/">(image: enquiry-form.png)</a></figure>
 
 ----
 interaction: 100

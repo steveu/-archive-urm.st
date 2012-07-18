@@ -17,11 +17,6 @@
     <!-- look nice in a browser tab -->
     <link rel="icon shortcut" href="/favicon.ico" type="image/vnd.microsoft.com" />
 
-    <!-- the lengths we go to for  -->
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
-
     <!-- When (if) I add IE specific code, this will be useful -->
     <?php echo js('assets/scripts/libs/modernizr.custom.89936.js') ?>
 
@@ -36,6 +31,10 @@
 
 <body class="paused">
 
+    <p id="in_progress">
+        Work in progress, bear with me.
+    </p>
+
     <div class="container">
 
         <header id="top">
@@ -48,12 +47,10 @@
                     </a>
                 </h1>
             
-                <a class="hire"><span aria-hidden="true" data-icon="&#x35;"></span></a>
-
                 <nav class="main fadeInDown">
                     <ul>
                     <?php foreach($pages->visible() AS $p): ?>
-                    <li>
+                    <li class="<?php echo $p->fragment() ?>">
                         <a<?php echo ($p->isOpen()) ? ' class="active"' : '' ?> href="<?php echo $p->url() ?>" title="<?php echo $p->title() ?>">
                             <span aria-hidden="true" data-icon="&<?= html($p->icon()) ?>;"></span>
                             <?= html($p->title()) ?>

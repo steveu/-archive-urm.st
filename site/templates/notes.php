@@ -1,8 +1,4 @@
-<?php
-if(!r::is_ajax()) {	
-	snippet('header');
-}
-?>
+<?php snippet('header'); ?>
 
 <section class="notes">
 
@@ -28,8 +24,4 @@ if(!r::is_ajax()) {
 
 </section>
 
-<?php
-if(!r::is_ajax()) {	
-	snippet('footer');
-}
-?>
+<?php snippet('footer'); ?>

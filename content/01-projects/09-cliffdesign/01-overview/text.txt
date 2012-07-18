@@ -1,0 +1,25 @@
+Title: Cliff Design
+----
+id: cliffdesign
+----
+Date: 22-03-2012
+----
+Link: cliffdesign.co.uk
+----
+Text:
+
+Single page site featuring tidy interactions, developed from a flat designer comp. Includes humanised touches such as behaviour on portfolio items, and contact form chat-back.
+
+Built in the browser. Uses the excellent (link: http://getkirby.com/ text: Kirby) as a backend (big fan!).
+
+----
+interaction: 100
+----
+graphics: 10
+----
+html: 100
+----
+script: 100
+----
+php: 100
+----

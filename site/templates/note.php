@@ -1,43 +1,27 @@
-<?php
-if(!r::is_ajax()) {	
-	snippet('header');
-}
-?>
+<?php snippet('header'); ?>
 
-<div id="page">
+<section class="notes">
 
-	<section class="notes">
+	<article class="note">
 
+		<div class="padding">
 
-		<article>
+			<time datetime="<?php echo $page->date('c') ?>" pubdate="pubdate">
+			<em>
+			Note written: <?=$page->date('j<\s\up>S</\s\up> F Y')?> &#8212; a <?=$page->temp()?>, <?=$page->weather()?>, <?=$page->date('l') ?> <?=$page->when()?> in <?=$page->location()?>.
+			</em>
+			</time>
 
-			<aside class="meta">
-				
-				<time datetime="<?php echo $page->date('c') ?>" pubdate="pubdate">
-				<em>
-				Post written by Steve on the <?=$page->date('j<\s\up>S</\s\up> F Y')?> &#8212; a <?=$page->temp()?>, <?=$page->weather()?> <?=$page->when()?> in <?=$page->location()?>.
-				</em>
-				</time>
-			</aside>
-
-			<div class="post">
-
-				<h1><?php echo html($page->title()) ?></h1>
-    			<?php echo kirbytext($page->text()) ?>
-
-
-    			<?php snippet('disqus', array('disqus_shortname' => 'clearbar')) ?>
-			</div>
+			<h1><a href="<?php echo $page->url() ?>"><?php echo html($page->title()) ?></a></h1>
 			
-		</article>
+			<?php echo kirbytext($page->text()) ?>
+		
+		</div>
+
+	</article>
 
 
-	</section>
+</section>
 
-</div>
 
-<?php
-if(!r::is_ajax()) {	
-	snippet('footer');
-}
-?>
+<?php snippet('footer'); ?>
