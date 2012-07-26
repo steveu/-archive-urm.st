@@ -341,11 +341,13 @@ section.home {
 	
 	
 	h1 {
-		@include prefix(1);
+		//@include prefix(1);
+		@include pad(1,1);
 		@include span-columns(10,12);
 		@include heading(($base-font-size * 1.4), 0, 0, 1.444444444);
-		padding: 39px 0;
-	
+		padding-top: 39px;
+		padding-bottom: 39px;
+		
 		em {
 	
 		}
@@ -527,7 +529,7 @@ section.projects {
 	}
 }
 
-section.home_projects {
+section.home {
 	@extend section.projects;
 	padding-top: 0;
 }
