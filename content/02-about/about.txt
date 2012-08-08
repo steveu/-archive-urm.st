@@ -6,11 +6,6 @@ Fragment: about
 ----
 Text:
 
-
-
-
-# The Low Down
-
 <div class="video">
 
 <div class="videoBorder">

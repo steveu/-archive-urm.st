@@ -9,8 +9,9 @@
 	<?php $projects = $pages->findByTitle('Projects'); ?>
 	<?php $items = $projects->children()->visible()->flip(); ?>
 	<?php if($items && $items->count()): ?>
-		
+		<?php $i = 0; ?>
 		<?php foreach($items AS $item): ?>
+			<?php if ($i < 6) : ?>
 			<article>
 				<a href="/projects/<?=$item->id()?>">
 					<figure>
@@ -19,6 +20,8 @@
 					</figure>
 				</a>	
 			</article>
+			<?php endif; ?>
+			<?php $i++; ?>
 		<?php endforeach; ?>
 
 	<?php endif; ?>

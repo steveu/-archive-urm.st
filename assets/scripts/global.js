@@ -112,10 +112,10 @@
                 .transition(
                     {
                         delay: 150,
-                        x: '400px',
+                        x: '250px',
                         opacity: 0
                     },
-                    250,
+                    200,
                     'cubic-bezier(0.950, 0.050, 0.795, 0.035)',
 
                     function() {
@@ -140,7 +140,7 @@
                                 $content
                                     .transition(
                                         {
-                                            x: '-400px'
+                                            x: '-250px'
                                         },
                                         0
                                     )
@@ -150,10 +150,10 @@
                                             x: '0px',
                                             opacity: 1
                                         },
-                                        150,
+                                        100,
                                         'cubic-bezier(1.000, 0.000, 0.000, 1.000)',
                                         function() {
-                                            $('html, body').animate({ scrollTop: 0 }, 250);
+                                            $('html, body').animate({ scrollTop: 0 }, 200);
                                         }
                                     )
                                 ;
