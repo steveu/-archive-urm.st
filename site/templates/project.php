@@ -22,8 +22,11 @@
 
 		<?php echo kirbytext($page->text()) ?>
 
-		<a href="http://<?php echo $page->link() ?>" class="view_live">See this project live</a>
-
+		<?php if ($page->link()) : ?>
+			<p class="options">
+				<a href="http://<?php echo $page->link() ?>" class="button">See this project live</a>
+			</p>
+		<?php endif; ?>
 		
 	</div>
 	

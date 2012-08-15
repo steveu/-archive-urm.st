@@ -6,18 +6,17 @@ Date: 01-11-2008
 ----
 Link: york-arclight.co.uk
 ----
+Intro:
+
+Innovative (for it's time) JavaScript driven site for a homeless shelter in York. Design &amp; build by me.
+
+----
 Text:
 
-I designed and developed an innovative (it was innovative at the time yeah, I realise it's pretty obvious now) JavaScript driven site for a homeless shelter in York.
+One of the design requirements was that the website should reflect the innovative branding done for the newly created homeless shelter. Using the a giant version of the logo in the background and it's simple shapes and bold colours, I created an innovative layout that was easy and fun to use.
 
-----
-wireframes: 100
-----
-graphics: 100
-----
-html: 100
-----
-script: 100
-----
-php: 100
+<figure class="center">(image: overview.png)</figure>
+
+Technically this build was ahead of the curve, using JavaScript scrolling and history state-changes. Whilst much of this is commonplace today (it's in use here), I was and still am proud of the technical achievement. 
+
 ----

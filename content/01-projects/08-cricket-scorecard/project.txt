@@ -1,0 +1,28 @@
+Title: York Vale Cricket Scores
+----
+id: cricket-scorecard
+----
+Date: 01-02-2012
+----
+Link: scores.yorkvalecricket.co.uk
+----
+Intro:
+
+Web application for cricket teams to submit scorecards to league administrators. My design &amp; build.
+
+----
+Text:
+
+Together with stakeholders I led the design of a web application for cricket teams to easily submit their scorecards to the league association for verification. Using the structure of a wizard style form; a complicated scorecard is distilled into simple steps and progressively validated against league requirements to ensure correct results.
+
+I developed the app using a set of PHP form classes which I've built up over a number of years at Designition. This allowed for fine tuned validation and user friendly messaging using limited development, allowing time to be spent on custom features such as automatic score &amp; result calculations.
+
+I was particularly happy with the design of the step controls;
+
+<figure class="center">(image: steps.png)</figure>
+
+And the occasional emotive message about the final result. 
+
+Feedback from users and adminisrators has been very positive, and has provided opportunities for design tweaks and future development ideas.
+
+----

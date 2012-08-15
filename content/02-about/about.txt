@@ -6,6 +6,7 @@ Fragment: about
 ----
 Text:
 
+<!--
 <div class="video">
 
 <div class="videoBorder">
@@ -17,10 +18,11 @@ Text:
 	</div>
 </div>
 </div>
+-->
 
-I've worn many a hat in my nine years making websites for various agencies and increasingly for myself. Building up a broad range of skills in different design disciplines, with a particular focus on interaction design, developed during a recent <a ref="">Masters degree in <abbr title="Human Computer Interaction">HCI</abbr></a>.
+I've worn many a hat in my nine years making websites for various agencies and increasingly for myself, building up a well-rounded design skillset. Whlst holding a particular focus on interaction &amp; interface design, I'm also an accomplished contributer to a team design-process all the way from user research to polished products. 
 
-Technically I have expert skills in HTML, CSS and JavaScript, and a deep understading of both desktop and mobile platforms. I'm highly experienced using PHP, with knowledge of many popular frameworks and CMS systems, but also comfortable developing OOP systems from scratch. I have experience using Ruby (Rails), some iOS development work in Objective C, and am increasingly infatuated with node.js.
+Technically I have expert skills in HTML, CSS and JavaScript, and a deep understading of both desktop and mobile platforms. I'm highly experienced using PHP, with knowledge of many popular frameworks and CMS systems, but also comfortable developing OOP systems from scratch. I have some experience using Ruby (Rails) and limited iOS development work in Objective C. I am increasingly infatuated with <a href="http://nodejs.org/">node.js</a>.
 
 I'm available for contract and freelance work, either remotely, or working with you on site. Have car will travel &hellip;within reason.
 

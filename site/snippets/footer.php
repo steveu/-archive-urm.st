@@ -7,7 +7,7 @@
             <div class="wrapper">
 
                 <p class="contact">
-                    Find me on <a href="http://twitter.com/#!/steveu">Twitter</a>, <a href="">Dribbble</a>, <a href="">GitHub</a> and <a href="">Zerply</a>. Send email to <a href="mailto:&#115;&#x74;&#101;&#118;&#x65;&#x40;&#x63;&#x6c;&#101;&#97;&#114;&#98;&#x61;&#x72;&#46;&#x63;&#111;&#x6d;">steve@urm.st</a>.
+                    Find me on <a href="http://twitter.com/steveu">Twitter</a>, <a href="http://dribbble.com/steveu">Dribbble</a>, <a href="http://github.com/steveu">GitHub</a> and <a href="http://uk.linkedin.com/in/steveurmston">LinkedIn</a>. Send email to <a href="mailto:&#x73;&#116;&#x65;&#x76;&#101;&#64;&#117;&#114;&#109;&#x2e;&#115;&#x74;">&#x73;&#x74;&#101;&#118;&#x65;&#x40;&#x75;&#x72;&#x6d;&#x2e;&#115;&#x74;</a>.
                 </p>
 
                 <p class="copyright">

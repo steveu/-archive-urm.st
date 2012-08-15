@@ -28,8 +28,8 @@ $font-family: "dejarip", sans-serif;
 $heading-font-family: "adelle", serif;
 
 // Text Colors
-$text-color: #000;
-$heading-color: #000;
+$text-color: #110e0b;
+$heading-color: #110e0b;
 
 // Colors
 $orange: #DE7719;
@@ -84,6 +84,8 @@ body {
 	font-family: $font-family;
 	color: $text-color;
 	background: #F7F7F7 url('/assets/images/80-70-3.png');
+
+	//background: url('/assets/images/handmadepaper.png');
 	border-top: 8px solid $orange;
 
 	@if $debug == 1 {
@@ -97,13 +99,15 @@ body {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 
+	-webkit-transform: translate3d( 0, 0, 0);
+
 	&:before {
 		content: "";
 		position: fixed;
 		top: -10px;
 		left: 0;
 		width: 100%;
-		height: 10px;
+		height: 8px;
 
 		@include box-shadow(0px 0px 8px rgba(0,0,0,0.4));
 
@@ -162,8 +166,13 @@ body {
 	}
 	h1 {
 		padding: 0;
-		@include adjust-font-size-to($base-font-size * 2.4);
-		line-height: 34px;
+		font-size: 1.9em;
+		line-height: 30px;
+		@media screen and (min-width: 400px) {
+			@include adjust-font-size-to($base-font-size * 2.4);
+			line-height: 34px;
+		}
+		
 		text-rendering: optimizeLegibility;
 		-moz-font-smoothing: antialiased;
 		-webkit-font-smoothing: antialiased;
@@ -174,13 +183,17 @@ body {
 			display: block;
 			font-style: normal;
 			font-weight: 500;
+
 			font-family: $font-family;
-			font-size: $base-font-size;
+			font-size: 15px;
+			@media screen and (min-width: 400px) {
+				font-size: $base-font-size;
+			}
 			color: #777;
 			padding-top: 0px;
 		}
 		a {
-			color: #000;
+			color: $text-color;
 			border:  none;
 		}
 	}
@@ -189,24 +202,40 @@ body {
 
 nav.main {
 	font-family: $heading-font-family;
-	font-size: $base-font-size;
+
+	font-size: 15px;
+
+	@media screen and (min-width: 400px) {
+		font-size: $base-font-size;
+	}
 
 	//opacity: 0;
-	-webkit-animation-fill-mode: forwards;
-	-webkit-animation: fadeInDown 0.5s 1, both;
+	//-webkit-animation-fill-mode: forwards;
+	//-webkit-animation: fadeInDown 0.5s 1, both;
 
 	ul {
 		list-style: none;
 		padding: 32px 0 0;
+		@include clearfix;
 
-		@include span-columns(8,12);
-		@include squish(2,2);
+		@media screen and (min-width: 481px) {
+			@include span-columns(10,12);
+			@include squish(1,1);
+		}
+		@media screen and (min-width: 769px) {
+			@include span-columns(8,12);
+			@include squish(2,2);
+		}
+
+		//background: #F7F7F7 url('/assets/images/80-70-3.png');
 	}
 	li {
 		margin: 0;
 		padding: 0;
 		@include span-columns(2,8);
 		&:nth-child(4n) { @include omega; }
+
+		//background: #F7F7F7 url('/assets/images/80-70-3.png');
 	}
 	/*
 	li.projects {
@@ -251,13 +280,15 @@ nav.main {
 		display: block;
 		padding: 0px 0 4px 0;
 		
-		
+		//background: #F7F7F7 url('/assets/images/80-70-3.png');
 
-		color: #000;
+		color: $text-color;
 		text-decoration: none;
 		text-align: center;
 		border:  none;
 		@include text-shadow(0px 1px 1px rgba(255,255,255,0.7));
+
+		-webkit-transform: translate3d( 0, 0, 0);
 
 		@include transition-property(all);
 		@include transition-duration(0.15s);
@@ -269,26 +300,35 @@ nav.main {
 			display: block;
 			margin: 0 auto 0px;
 
+			-webkit-transform: translate3d( 0, 0, 0);
+
 			@include transition-property(all);
 			@include transition-duration(0.15s);
 			@include transition-timing-function($ease-out-quad);
+
 
 			font-size: 38px;
 			height: 42px;
 			line-height: 38px;
 			
             cursor: pointer;
+
+
 		}
 		
 		
 		
 
 		&:hover {
-			background: #F7F7F7 url('/assets/images/80-70-3.png');
+			//background: #F7F7F7 url('/assets/images/80-70-3.png');
 			span {
 				font-size: 43px;
 				//@include text-shadow(0px 1px 20px rgba(255,255,255,1));
-				-webkit-transform: translateY(-3px);
+
+				//background: #F7F7F7 url('/assets/images/80-70-3.png');
+				@include translateY(-3px);
+
+				//-webkit-transform: translateY(-3px);
 				color: teal;
 			}
 		}
@@ -332,8 +372,11 @@ nav.main {
 }
 
 div.padding {
-	padding-left: columns(1,12);
-	padding-right: columns(1,12);
+
+	@media screen and (min-width: 481px) {
+		padding-left: columns(1,12);
+		padding-right: columns(1,12);
+	}
 }
 
 
@@ -347,8 +390,10 @@ section.home {
 	
 	h1 {
 		//@include prefix(1);
-		@include pad(1,1);
-		@include span-columns(10,12);
+		@media screen and (min-width: 481px) {
+			@include pad(1,1);
+			@include span-columns(10,12);
+		}
 		@include heading(($base-font-size * 1.4), 0, 0, 1.444444444);
 		padding-top: 39px;
 		padding-bottom: 39px;
@@ -437,17 +482,21 @@ section.project {
 }
 
 figure.folio {
-
+	/*
 	@include box-shadow(
 		0px 0px 1px 0px #fff
 	);
+	*/
+	@include box-shadow(0px 1px 5px rgba(0,0,0,0.2));
+	padding: 10px;
+	background: #fff;
 	
 	margin-bottom: rhythm(1);
 
 	text-align: center;
 
 	img {
-		width: 100%;
+		//width: 100%;
 	}
 }
 
@@ -484,12 +533,25 @@ section.projects {
 		}
 		&:hover {
 
-		}
 
-		@include span-columns(4,12);
+		}
+		@media screen and (min-width: 500px) {
+			@include span-columns(6,12);
+	
+			@include remove-nth-omega(3n);
+			@include nth-omega(2n);
+
+		}
+		@media screen and (min-width: 900px) {
+			@include span-columns(4,12);
+
+			@include remove-nth-omega(2n);
+			@include nth-omega(3n);
+			
+		}
 		
 		margin-bottom: $gutter;
-		&:nth-child(3n) { @include omega; }
+		
 
 		a {
 			display: block;
@@ -497,9 +559,9 @@ section.projects {
 
 			figure {
 				
-				padding: 10px;
+				padding: 8px;
 				background: #fff;
-				@include box-shadow(0px 1px 4px rgba(0,0,0,0.15));
+				@include box-shadow(0px 1px 4px rgba(0,0,0,0.2));
 				@include border-radius(2px);
 				/*
 				@include transition-property(all);
@@ -521,9 +583,6 @@ section.projects {
 			}
 			color: $text-color;
 			border: none;
-			img {
-				height: 215px;
-			}
 		}	
 	}
 }
@@ -594,7 +653,7 @@ aside.hcard {
 			padding: 7px;
 			@include background(
 				linear-gradient(#ddd, #efefef),
-				url('/assets/images/80-70-3.png')
+				url('/assets/images/handmadepaper.png')
 			);
 			@include border-radius(3px);
 			position: relative;
@@ -656,6 +715,20 @@ aside.hcard {
 
 			&.github {
 				font-size: 31px;
+
+				&:hover {
+					color: #222;
+				}
+			}
+			&.twitter {
+				&:hover {
+					color: #00ACED;
+				}
+			}
+			&.dribbble {
+				&:hover {
+					color: #ea4c89;
+				}
 			}
 		}
 	}
