@@ -1,0 +1,28 @@
+Title: MSc Dissertation
+----
+id: msc-dissertation
+----
+Date: 01-02-2009
+----
+Intro:
+
+My dissertation project involved building a custom VLE and investigating the effects of adding game mechanics.
+
+----
+Text:
+
+My MSc final project (_"The Application of Game Mechanics to a Virtual Learning Environment (VLE)"_) involved the build of a custom <abbr title="Virtual Learning Environment">VLE</abbr> (called York Assembly) and a real world experiment designed to test the effect of game mechanics on participation.
+
+Slides from my 10 minute presentation are below.
+
+<figure class="slideshow">
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/7852875?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen> </iframe>
+
+</figure>
+
+But if you fancy all 25,000 words (plus some nice diagrams!) then by all means;
+
+<p class="options">
+	<a class="button pdf" href="">Download the PDF</a>
+</p>

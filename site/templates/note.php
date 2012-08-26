@@ -15,6 +15,8 @@
 			<h1><a href="<?php echo $page->url() ?>"><?php echo html($page->title()) ?></a></h1>
 			
 			<?php echo kirbytext($page->text()) ?>
+
+			<p>Got something to say, let me know on <a href="http://twitter.com/steveu">Twitter</a></p>
 		
 		</div>
 

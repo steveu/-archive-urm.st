@@ -31,6 +31,10 @@
 
 <body class="paused">
 
+    <p id="in_progress">
+        Work in progress, bear with me.
+    </p>
+
     <div class="container">
 
         <header id="top">
@@ -74,16 +78,18 @@
         <div id="page">
 <section class="notes">
 
-	<article>
+	<article class="note">
 
 		<div class="padding">
 
-			<h1><a href="/notes/seeing-faces">Seeing Faces Everywhere</a></h1>
 			<time datetime="2012-03-25T00:00:00+00:00" pubdate="pubdate">
 			<em>
-			Post written by Steve on the 25<sup>th</sup> March 2012 &#8212; a warm, sunny afternoon in York.
+			Note written: 25<sup>th</sup> March 2012 &#8212; a warm, sunny, Sunday afternoon in York.
 			</em>
 			</time>
+
+			<h1><a href="/notes/seeing-faces">Seeing Faces Everywhere</a></h1>
+			
 			<p>Our brains are hardwired to attribute human features and behaviour to many things we know not to have them. From pets (they really aren't clever), to abstract things like countries, simple things like plug sockets, and the UI of digital products.</p>
 
 <p>Despite being able to rationally detach these human characteristics, we can't help but see them anyway. <em>We see faces everywhere we look</em>.</p>
@@ -115,6 +121,8 @@
 <p>This is a powerful technique to infulence people's behaviour. It can be used subtly, or overtly, but should be used carefully as it could easily become a turn-off. It could also just be an unecessary distraction.</p>
 
 <p>What is certain is that we are going to see a lot more of this, and (like any overused technique) we could find ourselves in the middle of a backlash.</p>
+
+			<p>Got something to say, let me know on <a href="http://twitter.com/steveu">Twitter</a></p>
 		
 		</div>
 
@@ -126,22 +134,25 @@
 
     		</div>
 
-            <footer id="bottom">
-                
-                <div class="wrapper">
-                    <p class="contact">
-                        I am <a href="http://twitter.com/#!/steveu">Twitter</a>. I also <a href="mailto:&#115;&#x74;&#101;&#118;&#x65;&#x40;&#x63;&#x6c;&#101;&#97;&#114;&#98;&#x61;&#x72;&#46;&#x63;&#111;&#x6d;">&#x65;&#109;&#x61;&#105;&#x6c;</a>.
-                    </p>
-
-                    <p class="copyright">
-                        <a class="cc" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
-                        <img alt="Creative Commons License" src="/assets/images/cc_licence.png" width="88" height="31" /></a>
-                    </p>
-                </div>
-
-            </footer>
-
         </div>
+
+        <footer id="bottom">
+                
+            <div class="wrapper">
+
+                <p class="contact">
+                    Find me on <a href="http://twitter.com/steveu">Twitter</a>, <a href="http://dribbble.com/steveu">Dribbble</a>, <a href="http://github.com/steveu">GitHub</a> and <a href="http://uk.linkedin.com/in/steveurmston">LinkedIn</a>. Send email to <a href="mailto:&#x73;&#116;&#x65;&#x76;&#101;&#64;&#117;&#114;&#109;&#x2e;&#115;&#x74;">&#x73;&#x74;&#101;&#118;&#x65;&#x40;&#x75;&#x72;&#x6d;&#x2e;&#115;&#x74;</a>.
+                </p>
+
+                <p class="copyright">
+                    <a class="cc" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
+                    <img alt="Creative Commons License" src="/assets/images/cc_licence.png" width="88" height="31" /></a>
+                </p>
+
+                
+            </div>
+
+        </footer>
     
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>

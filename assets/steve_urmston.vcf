@@ -1,0 +1,24 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Urmston;Steve;;;
+FN:Steve Urmston
+NICKNAME:Steve
+TITLE:Freelance Web & Interaction Designer
+EMAIL;type=INTERNET;type=WORK:steve@urm.st
+TEL;type=CELL;type=VOICE;type=pref:07590 843170
+item1.ADR;type=HOME;type=pref:;;65 Beaconsfield Street\nAcomb;York;;YO244NB;United Kingdom
+item1.X-ABADR:gb
+X-SOCIALPROFILE;type=twitter:http://twitter.com/steveu
+X-SOCIALPROFILE;type=linkedin:http://www.linkedin.com/in/steveurmston
+
+item3.URL;type=pref:http://urm.st
+item3.X-ABLabel:Website
+
+BDAY;value=date:1979-03-24
+X-JABBER;type=HOME;type=pref:steve@urm.st
+IMPP;X-SERVICE-TYPE=Jabber;type=HOME;type=pref:xmpp:steve@urm.st
+
+CATEGORIES:card
+UID:2787ce12-f3dc-4fd6-b752-7fb833438734
+X-ABUID:DA11CD54-87A5-4603-A034-304E3FE16A90:ABPerson
+END:VCARD

@@ -1,0 +1,22 @@
+                            _   
+                           | |  
+ _   _ _ __ _ __ ___    ___| |_ 
+| | | | '__| '_ ` _ \  / __| __|
+| |_| | |  | | | | | |_\__ \ |_ 
+ \__,_|_|  |_| |_| |_(_)___/\__|
+
+
+/* TEAM */
+
+	Designer/Developer: Steve Urmston
+	Site: http://urm.st
+	Twitter: @steveu
+	Location: York, UK.
+
+
+/* SITE */
+
+	Last update: 2012/08/13 
+	Components: Modernizr, jQuery, Typekit.
+	Fonts: DejaRip, Adelle
+	Software: Sublime Text, Photoshop, IcoMoon, Chrome

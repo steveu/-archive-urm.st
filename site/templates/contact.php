@@ -30,7 +30,7 @@
 				</dl>
 
 				<nav class="icon-links">
-					<a href="/assets/steve_urmston.vcf" class="microformat"></a>
+					<a class="no-ajaxy microformat" href="/assets/steve_urmston.vcf"></a>
 
 					<a class="twitter" href="https://twitter.com/steveu" data-icon="&#x23;"></a>
 					<a class="dribbble" href="http://dribbble.com/steveu" data-icon="&#x22;"></a>

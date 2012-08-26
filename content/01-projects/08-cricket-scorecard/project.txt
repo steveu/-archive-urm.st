@@ -13,15 +13,19 @@ Web application for cricket teams to submit scorecards to league administrators.
 ----
 Text:
 
-Together with stakeholders I led the design of a web application for cricket teams to easily submit their scorecards to the league association for verification. Using the structure of a wizard style form; a complicated scorecard is distilled into simple steps and progressively validated against league requirements to ensure correct results.
+A cricket league association approached us to help speed up the process of submitting match scorecards for verification (done by both teams after a match) and to prevent missing data.
 
-I developed the app using a set of PHP form classes which I've built up over a number of years at Designition. This allowed for fine tuned validation and user friendly messaging using limited development, allowing time to be spent on custom features such as automatic score &amp; result calculations.
+In consultation with stakeholders (particualrly on the peculiarities of cricket rules) I led the design of a web application. Using the structure of a wizard style form; a complicated scorecard is distilled into simple steps which can then be progressively validated against league requirements to ensure correct results.
 
-I was particularly happy with the design of the step controls;
+I developed the app using a set of PHP form classes which I've built up over a number of years at Designition. This allowed for fine-tuned validation and user-friendly messaging using limited development, allowing time to be spent on custom features such as automatic score &amp; result calculations.
+
+I was particularly happy with how the step controls turned out;
 
 <figure class="center">(image: steps.png)</figure>
 
-And the occasional emotive message about the final result. 
+And the occasional emotive message about the final result.
+
+<figure class="center">(image: so_close.png)</figure>
 
 Feedback from users and adminisrators has been very positive, and has provided opportunities for design tweaks and future development ideas.
 

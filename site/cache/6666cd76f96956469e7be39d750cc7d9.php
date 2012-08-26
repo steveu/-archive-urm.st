@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>Steven Urmston - Freelance Web &amp; UI Designer - Home</title>
+    <title>Steven Urmston - Freelance Web &amp; UI Designer - Hello</title>
 
     <meta name="description" content="" />
     <meta name="author" content="Steven Urmston">
@@ -30,6 +30,10 @@
 </head>
 
 <body class="paused">
+
+    <p id="in_progress">
+        Work in progress, bear with me.
+    </p>
 
     <div class="container">
 
@@ -73,77 +77,78 @@
 
         <div id="page">
 <section class="home">
-	<h1><strong>Hello there</strong>, I'm Steve, a freelance web designer &amp; developer based in North Yorkshire. I design &amp; build interfaces for web &amp; mobile.</h1>
+
+	<h1 class="title">
+		<strong>Hello there</strong>, I'm Steve, a freelance web designer & developer based in North Yorkshire. <em>I design and build interfaces for web &amp; mobile</em>.
+	</h1>
+
+													<article>
+				<a href="/projects/cliffdesign">
+					<figure>
+												<img src="/content/01-projects/09-cliffdesign/screenshot.png" alt="Cliff Design" />
+					</figure>
+				</a>	
+			</article>
+														<article>
+				<a href="/projects/cricket-scorecard">
+					<figure>
+												<img src="/content/01-projects/08-cricket-scorecard/screenshot.png" alt="York Vale Cricket Scores" />
+					</figure>
+				</a>	
+			</article>
+														<article>
+				<a href="/projects/doineedavet">
+					<figure>
+												<img src="/content/01-projects/07-doineedavet/screenshot.png" alt="Do I Need A Vet?" />
+					</figure>
+				</a>	
+			</article>
+														<article>
+				<a href="/projects/glassescomplete">
+					<figure>
+												<img src="/content/01-projects/06-glassescomplete/screenshot.png" alt="Glasses Complete" />
+					</figure>
+				</a>	
+			</article>
+														<article>
+				<a href="/projects/york-assembly">
+					<figure>
+												<img src="/content/01-projects/03-york-assembly/screenshot.png" alt="York Assembly" />
+					</figure>
+				</a>	
+			</article>
+														<article>
+				<a href="/projects/arclight">
+					<figure>
+												<img src="/content/01-projects/02-arclight/screenshot.png" alt="York Arclight" />
+					</figure>
+				</a>	
+			</article>
+								
+	
 </section>
-
-	
-	<section class="home_projects">
-
-			<article>
-			<a href="/projects/cliffdesign">
-				<figure>
-										<img src="/content/01-projects/09-cliffdesign/screenshot.png" alt="Cliff Design" />
-				</figure>
-			</a>	
-		</article>
-			<article>
-			<a href="/projects/beatherder-traders">
-				<figure>
-										<img src="/content/01-projects/08-beatherder-traders/screenshot.png" alt="The Beat-Herder Traders" />
-				</figure>
-			</a>	
-		</article>
-			<article>
-			<a href="/projects/doineedavet">
-				<figure>
-										<img src="/content/01-projects/07-doineedavet/screenshot.png" alt="Do I Need A Vet?" />
-				</figure>
-			</a>	
-		</article>
-			<article>
-			<a href="/projects/glassescomplete">
-				<figure>
-										<img src="/content/01-projects/06-glassescomplete/screenshot.png" alt="Glasses Complete" />
-				</figure>
-			</a>	
-		</article>
-			<article>
-			<a href="/projects/arclight">
-				<figure>
-										<img src="/content/01-projects/02-arclight/screenshot.png" alt="York Arclight" />
-				</figure>
-			</a>	
-		</article>
-			<article>
-			<a href="/projects/royle">
-				<figure>
-										<img src="/content/01-projects/01-roylerecruitment/screenshot.png" alt="Royle Recruitment" />
-				</figure>
-			</a>	
-		</article>
-	
-	</section>
-
-
 
     		</div>
 
-            <footer id="bottom">
-                
-                <div class="wrapper">
-                    <p class="contact">
-                        I am <a href="http://twitter.com/#!/steveu">Twitter</a>. I also <a href="mailto:&#115;&#x74;&#101;&#118;&#x65;&#x40;&#x63;&#x6c;&#101;&#97;&#114;&#98;&#x61;&#x72;&#46;&#x63;&#111;&#x6d;">&#x65;&#109;&#x61;&#105;&#x6c;</a>.
-                    </p>
-
-                    <p class="copyright">
-                        <a class="cc" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
-                        <img alt="Creative Commons License" src="/assets/images/cc_licence.png" width="88" height="31" /></a>
-                    </p>
-                </div>
-
-            </footer>
-
         </div>
+
+        <footer id="bottom">
+                
+            <div class="wrapper">
+
+                <p class="contact">
+                    Find me on <a href="http://twitter.com/steveu">Twitter</a>, <a href="http://dribbble.com/steveu">Dribbble</a>, <a href="http://github.com/steveu">GitHub</a> and <a href="http://uk.linkedin.com/in/steveurmston">LinkedIn</a>. Send email to <a href="mailto:&#x73;&#116;&#x65;&#x76;&#101;&#64;&#117;&#114;&#109;&#x2e;&#115;&#x74;">&#x73;&#x74;&#101;&#118;&#x65;&#x40;&#x75;&#x72;&#x6d;&#x2e;&#115;&#x74;</a>.
+                </p>
+
+                <p class="copyright">
+                    <a class="cc" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
+                    <img alt="Creative Commons License" src="/assets/images/cc_licence.png" width="88" height="31" /></a>
+                </p>
+
+                
+            </div>
+
+        </footer>
     
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
