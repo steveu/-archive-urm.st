@@ -31,10 +31,6 @@
 
 <body class="paused">
 
-    <p id="in_progress">
-        Work in progress, bear with me.
-    </p>
-
     <div class="container">
 
         <header id="top">

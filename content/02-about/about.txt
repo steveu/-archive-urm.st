@@ -6,24 +6,14 @@ Fragment: about
 ----
 Text:
 
-<!--
-<div class="video">
+I've worn many hats in my 9 years making websites; for various agencies, clients and myself, and I've developed a well-rounded design skillset. Whilst I have a particular focus on interaction &amp; interface design, I'm an accomplished contributor to a team design-process from user research through to polished products. 
 
-<div class="videoBorder">
-	<div class="videoPlayer">
-		<video id="videoShowcase" poster="" autoplay="autoplay" autobuffer="autobuffer" loop="loop" class="shown mask" style="display: block; " muted="true">
-			<source src="/assets/steve.m4v" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" width="200%" height="200%">
-			<source src="/assets/steve.mov" width="200%" height="200%">
-		</video>
-	</div>
-</div>
-</div>
--->
+## Geek speak
 
-I've worn many a hat in my nine years making websites for various agencies and increasingly for myself, building up a well-rounded design skillset. Whlst holding a particular focus on interaction &amp; interface design, I'm also an accomplished contributer to a team design-process all the way from user research to polished products. 
+I'm an expert in front-end web development for desktop &amp; mobile using HTML, CSS and JavaScript. I keep myself bang up to date and have experience of responsive design, advanced HTML5 and CSS3, toolkits such as <a href="http://sass-lang.com/">SASS</a> and <a href="http://compass-style.org/">Compass</a>, and server side JavaScript using <a href="http://nodejs.org/">node.js</a>.
 
-Technically I have expert skills in HTML, CSS and JavaScript, and a deep understading of both desktop and mobile platforms. I'm highly experienced using PHP, with knowledge of many popular frameworks and CMS systems, but also comfortable developing OOP systems from scratch. I have some experience using Ruby (Rails) and limited iOS development work in Objective C. I am increasingly infatuated with <a href="http://nodejs.org/">node.js</a>.
+I'm highly experienced using PHP with knowledge of many popular frameworks and CMS systems, but also comfortable developing OOP systems myself. I have some experience using Ruby (Rails), good knowledge of Git, and can (just about) maintain Linux based servers.
 
-I'm available for contract and freelance work, either remotely, or working with you on site. Have car will travel &hellip;within reason.
+## What's next?
 
-Think I'd be a good fit for your business? Please <a href="/contact">get in touch</a>, as I'd love to chat!
+I'm available for contract and freelance work, either remotely, or on site, so f you think I'd be a good fit for your business; please do <a href="/contact">get in touch</a>. I'd love to chat!
