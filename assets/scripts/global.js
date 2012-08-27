@@ -159,7 +159,9 @@
                                             }
                                             else {
                                                 var headerHeight = $('#top').height();
-                                                $('html, body').animate({ scrollTop: (headerHeight + 8) }, 150);
+                                                if ($(window).scrollTop() > headerHeight) {
+                                                    $('html, body').animate({ scrollTop: (headerHeight + 8) }, 150);
+                                                }
                                             }
                                         }
                                     )
