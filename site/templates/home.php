@@ -28,4 +28,26 @@
 
 </section>
 
+
+<section class="testimionials">
+	<h1>Letterbox screenshots not enough?</h1>
+	<?php $testimonials = $pages->findByTitle('Testimonials'); ?>
+	<?php $items = $testimonials->children()->visible()->flip(); ?>
+
+	<?php foreach($items AS $item): ?>
+		<blockquote>
+			<figure>
+				<span>
+					<?php $image = $item->images()->find('picture.jpg') ?>
+					<img src="<?php echo $image->url() ?>" alt="<?=$item->title()?>" />
+				</span>
+			</figure>
+			<p><?=$item->quote()?></p>
+			<cite><?=$item->author()?> - <?=$item->company()?></cite>	
+		</blockquote>
+	<?php endforeach; ?>
+
+
+</section>
+
 <?php snippet('footer'); ?>
