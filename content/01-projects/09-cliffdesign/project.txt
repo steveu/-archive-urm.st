@@ -26,13 +26,5 @@ And the chat-back the enquiry form gives you, as you complete different fields.
 <figure class="center"><a href="http://cliffdesign.co.uk/">(image: enquiry-form.png)</a></figure>
 
 ----
-interaction: 100
-----
-graphics: 10
-----
-html: 100
-----
-script: 100
-----
-php: 100
+Tags: Front-end, Back-end
 ----

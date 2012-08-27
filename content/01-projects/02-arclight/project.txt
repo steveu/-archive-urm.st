@@ -20,3 +20,5 @@ One of the design requirements was that the website should reflect the innovativ
 Technically this build was ahead of the curve, using JavaScript scrolling and history state-changes. Whilst much of this is commonplace today (it's in use here), I was and still am proud of the technical achievement. 
 
 ----
+Tags: Design, Front-end
+----

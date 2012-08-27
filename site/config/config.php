@@ -212,7 +212,7 @@ c::set('cache.ignore', array('search', 'some/other/uri/to/ignore'));
 
 */
 
-c::set('cache', false);
+c::set('cache', true);
 c::set('cache.autoupdate', true);
 c::set('cache.data', true);
 c::set('cache.html', true);

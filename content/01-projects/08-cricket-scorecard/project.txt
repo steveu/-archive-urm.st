@@ -30,3 +30,5 @@ And the occasional emotive message about the final result.
 Feedback from users and adminisrators has been very positive, and has provided opportunities for design tweaks and future development ideas.
 
 ----
+Tags: Strategy, Design, Front-end
+----

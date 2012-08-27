@@ -1,0 +1,30 @@
+Title: Do I Need A Vet?
+----
+id: doineedavet
+----
+Date: 01-06-2011
+----
+Link: doineedavet.co.uk
+----
+Intro:
+
+I designed and built this vet advice site. Includes finely tuning search, and admin baked directly into the front-end.
+
+----
+Text:
+
+We were approached to take a vet advice forum and make it financially self-sustaining whilst still keeping the service free. A quandry we tackled by moving the site to genuine question &amp; answer model alongside adding a combination of donation opportunities and a optional tier of advanced features for a yearly suscription.
+
+To encourage users to donate at opportune moments I decided to allow vets to decide whether to include a donation request along with their answers. This allowed vets to pick an appropriate moment and more importantly avoided requests appearing alongside sensitive posts, often involving berievement.
+
+<figure class="center">(image: answer.png)</figure>
+
+I also implemeted a dark (grey) pattern to encourage users to pay for advanced features by requiring they view a popup of benefits upon asking a question, and making the dismiss link a secondary action. I think I got the balence right between meeting the site goals whilst maintaing usability.
+
+<figure class="center">(image: dark_pattern.png)</figure>
+
+My redesign dramatically increaed the volume of questions and answers and had been successful in generating a modest income for the vet owner.
+
+----
+Tags: Strategy, Design, Front-end, Back-end
+----

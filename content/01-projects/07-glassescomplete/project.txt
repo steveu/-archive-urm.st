@@ -1,0 +1,36 @@
+Title: Glasses Complete
+----
+id: glassescomplete
+----
+Date: 05-10-2010
+----
+Link: glassescomplete.co.uk
+----
+Intro:
+
+I wireframed this complex E-commerce site and did the vast majority of frontend development.
+
+----
+Text:
+
+A long term client at Designition; Glasses Complete sell prescription glasses online and approached us to transform their simple E-commerce site to an all-singing shopping experience which would hold up against the market leader; Glasses Direct.
+
+I wireframed user-journeys though a series of complex interactions, and was able to refine these when building the final website though prototyping different implementations.
+
+The core experience is faceted navigation for frames; enabling users to refine their selection as they browse, whilst keeping a pick up and play element.
+
+<figure class="center">(image: filters.png)</figure>
+
+I'm very proud of my work refining the customisation of frames process which is both powerful and smooth and almost completely error proof. In particular I was able to  work in an additional requirement for multiple colour tints on frames in a way that looks like it was always meant to be that way.
+
+<figure class="center">(image: tints.png)</figure>
+
+<figure class="center">(image: tints2.png)</figure>
+
+The building of this site required me to write complicated checkout and filtering systems in PHP and progressively layer JavaScript interactions layer on top. I believe it made me a better programmer.
+
+The site was a commercial success and is maintains that performance several years later with minimal updates.
+
+----
+Tags: Strategy, Interaction Design, Front-end
+----

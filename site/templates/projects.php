@@ -12,7 +12,13 @@
 				</figure>
 
 				<h2><?php echo html($item->title()) ?></h2>
+				
 				<?php echo kirbytext($item->intro()) ?>
+				<ul class="tags">
+				<?php foreach ($tags = explode(",", $item->tags()) as $tag) : ?>
+					<li><?=$tag?></li>
+				<?php endforeach; ?>
+				</ul>
 			</a>	
 		</article>
 

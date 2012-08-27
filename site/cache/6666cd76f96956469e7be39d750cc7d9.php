@@ -97,23 +97,23 @@
 				</a>	
 			</article>
 														<article>
-				<a href="/projects/doineedavet">
-					<figure>
-												<img src="/content/01-projects/07-doineedavet/screenshot.png" alt="Do I Need A Vet?" />
-					</figure>
-				</a>	
-			</article>
-														<article>
 				<a href="/projects/glassescomplete">
 					<figure>
-												<img src="/content/01-projects/06-glassescomplete/screenshot.png" alt="Glasses Complete" />
+												<img src="/content/01-projects/07-glassescomplete/screenshot.png" alt="Glasses Complete" />
 					</figure>
 				</a>	
 			</article>
 														<article>
-				<a href="/projects/york-assembly">
+				<a href="/projects/doineedavet">
 					<figure>
-												<img src="/content/01-projects/03-york-assembly/screenshot.png" alt="York Assembly" />
+												<img src="/content/01-projects/06-doineedavet/screenshot.png" alt="Do I Need A Vet?" />
+					</figure>
+				</a>	
+			</article>
+														<article>
+				<a href="/projects/msc-dissertation">
+					<figure>
+												<img src="/content/01-projects/03-msc-dissertation/screenshot.png" alt="MSc Dissertation" />
 					</figure>
 				</a>	
 			</article>

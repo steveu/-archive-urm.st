@@ -11,7 +11,7 @@ My dissertation project involved building a custom VLE and investigating the eff
 ----
 Text:
 
-My MSc final project (_"The Application of Game Mechanics to a Virtual Learning Environment (VLE)"_) involved the build of a custom <abbr title="Virtual Learning Environment">VLE</abbr> (called York Assembly) and a real world experiment designed to test the effect of game mechanics on participation.
+My MSc final project (_"The Application of Game Mechanics to a Virtual Learning Environment (VLE)"_) involved the build of a custom <abbr title="Virtual Learning Environment">VLE</abbr> and a real world experiment designed to test the effect of game mechanics on participation.
 
 Slides from my 10 minute presentation are below.
 
@@ -26,3 +26,7 @@ But if you fancy all 25,000 words (plus some nice diagrams!) then by all means;
 <p class="options">
 	<a class="button pdf" href="">Download the PDF</a>
 </p>
+
+----
+Tags: UX Research, Design, Front-end, Back-end
+----
