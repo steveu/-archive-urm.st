@@ -50,9 +50,6 @@ $gutter-width: 2.1em;
 $grid-padding: 1.555555556em;
 
 
-
-
-
 $legacy-support-for-ie6 : false;
 $legacy-support-for-ie7 : false;
 
@@ -65,8 +62,6 @@ $ease-in-quad: cubic-bezier(0.550, 0.085, 0.680, 0.530);
 $ease-in-out-quad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
 $ease-folio: cubic-bezier(0.645, 0.045, 0.355, 1);
-
-
 
 
 //	******************************************************************
@@ -161,7 +156,11 @@ body {
 	);
 	padding-bottom: 1px;
 	.wrapper {
-		padding: 64px 0 0 0;
+
+		padding: 56px 0 0 0;
+		@media screen and (min-width: 321px) {
+			padding: 64px 0 0 0;
+		}
 		@include clearfix;
 	}
 	h1 {
@@ -386,22 +385,47 @@ div.padding {
 
 section.home {
 
-	
-	
 	h1 {
 		//@include prefix(1);
+
+		@include heading(($base-font-size * 1.2), 0, 0, 1.2);
+
+		padding-top: 39px;
+		padding-bottom: 39px;
+
 		@media screen and (min-width: 481px) {
 			@include pad(1,1);
 			@include span-columns(10,12);
+
+			@include heading(($base-font-size * 1.4), 0, 0, 1.444444444);
+
+			padding-top: 39px;
+			padding-bottom: 39px;
 		}
-		@include heading(($base-font-size * 1.4), 0, 0, 1.444444444);
-		padding-top: 39px;
-		padding-bottom: 39px;
+		
 		
 		em {
 	
 		}
 		
+	}
+}
+
+section.testimionials {
+
+	@media screen and (min-width: 481px) {
+		@include span-columns(10,12);
+		@include squish(1,1);
+	}
+	@media screen and (min-width: 769px) {
+		@include span-columns(8,12);
+		@include squish(2,2);
+	}
+
+	h1 {
+		padding-top: rhythm(0.5);
+		text-align: center;
+		padding-bottom: 0;
 	}
 }
 
@@ -411,8 +435,10 @@ section.home {
 
 section.about {
 	
-	@include span-columns(20,24);
-	@include pad(1,1);
+	@media screen and (min-width: 481px) {
+		@include span-columns(20,24);
+		@include pad(1,1);
+	}
 }
 
 
@@ -426,8 +452,11 @@ section.notes {
 
 		@include clearfix;
 
-		@include span-columns(20,24);
-		@include pad(1,1);
+		@media screen and (min-width: 481px) {
+			@include span-columns(20,24);
+			@include pad(1,1);
+		}
+
 		padding-bottom: rhythm(2);
 
 		@include box-shadow(
@@ -476,8 +505,10 @@ article.note {
 
 section.project {
 
-	@include span-columns(10,12);
-	@include pad(1,1);
+	@media screen and (min-width: 481px) {
+		@include span-columns(10,12);
+		@include pad(1,1);
+	}
 	
 }
 
@@ -525,6 +556,7 @@ section.projects {
 		padding-bottom: rhythm(1);
 		h2 {
 			@include heading(($base-font-size * 1.2), 1, 0, 1);
+			text-align: left;
 		}
 		p {
 			padding-top: 0;
@@ -551,7 +583,7 @@ section.projects {
 		}
 		
 		margin-bottom: $gutter;
-		
+
 
 		a {
 			display: block;
@@ -559,8 +591,10 @@ section.projects {
 
 			figure {
 				
-				padding: 8px;
-				background: #fff;
+				@media screen and (min-width: 321px) {
+					padding: 8px;
+					background: #fff;
+				}
 				@include box-shadow(0px 1px 4px rgba(0,0,0,0.2));
 				@include border-radius(2px);
 				
@@ -638,6 +672,10 @@ ul.tags {
 section.home {
 	@extend section.projects;
 	padding-top: 0;
+
+	article {
+		margin-bottom: 0;
+	}
 }
 
 section.projects_nav {
@@ -684,8 +722,11 @@ video {
 //	******************************************************************
 
 section.contact {
-	@include span-columns(8,12);
-	@include pad(2,2);
+
+	@media screen and (min-width: 481px) {
+		@include span-columns(8,12);
+		@include pad(2,2);
+	}
 }
 
 aside.hcard {
@@ -697,7 +738,13 @@ aside.hcard {
 	@include box-shadow(0px 1px 4px rgba(0,0,0,0.2));
 
 	figure {
-		@include span-columns(2,8);
+		max-width: 128px;
+		margin-bottom: rhythm(1);
+		@media screen and (min-width: 321px) {
+
+			@include span-columns(2,8);
+			margin-bottom: 0;
+		}
 		//@include border-radius(9px);
 		
 		div {
@@ -739,7 +786,10 @@ aside.hcard {
 	}
 
 	dl {
-		@include span-columns(5, 8);
+		@include span-columns(7, 8);
+		@media screen and (min-width: 321px) {
+			@include span-columns(5, 8);
+		}
 	}
 
 	a.microformat {
@@ -893,10 +943,16 @@ aside.hcard {
 		border: none;
 	}
 	p.copyright {
-		@include span-columns(2 omega,12);
+		padding-top: rhythm(1);
+		@media screen and (min-width: 481px) {
+			padding-top: 0;
+			@include span-columns(2 omega,12);
+		}
 	}
 
 	p.contact {
-		@include span-columns(10,12);
+		@media screen and (min-width: 481px) {
+			@include span-columns(10,12);
+		}
 	}
 }

@@ -35,13 +35,20 @@
 }
 
 h1 {
-	@include heading(($base-font-size * 1.4), 2, 1);
+	@include heading(($base-font-size * 1.2), 1.5, 1);
+
+	@media screen and (min-width: 481px) {
+		@include heading(($base-font-size * 1.4), 2, 1);
+	}
 	text-align: center;
 	//background: green;
 }
 h2 {
-	@include heading(($base-font-size * 1.2));
-	
+	@include heading(($base-font-size * 1.1));
+	@media screen and (min-width: 481px) {
+		@include heading(($base-font-size * 1.2));
+	}
+	text-align: center;
 }
 h3 {
 
@@ -74,21 +81,30 @@ hr {
 }
 
 blockquote {
-	padding: rhythm() rhythm() rhythm() (rhythm() * 4);
-	background: #efefef;
-	@include margin-trailer(1);
-	@include margin-leader(1);
-	position: relative;
+	padding: rhythm(1) 0;
+	figure {
+		@include span-columns(2,8);
 
-	&:before {
-		content: '\201C';
-		font-size: 200px;
-		line-height: 200px;
-		vertical-align: text-bottom;
-		display: block;
-		position: absolute;
-		top: 0px;
-		left: 0px;
+		span {
+			display: block;
+			padding: 8px;
+			background: #fff;
+			@include box-shadow(0px 1px 4px rgba(0,0,0,0.2));
+			@include border-radius(50%);
+		}
+		
+		/*
+		@include transition-property(all);
+		@include transition-duration(0.05s);
+		@include transition-timing-function($ease-out-quad);
+		*/
+
+		img {
+			@include border-radius(50%);
+			position: relative;
+			
+		}
+
 	}
 }
 
