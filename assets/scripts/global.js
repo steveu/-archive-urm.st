@@ -153,7 +153,14 @@
                                         100,
                                         'cubic-bezier(1.000, 0.000, 0.000, 1.000)',
                                         function() {
-                                            $('html, body').animate({ scrollTop: 0 }, 200);
+
+                                            if (urlParts.length == 1) {
+                                                $('html, body').animate({ scrollTop: 0 }, 150);
+                                            }
+                                            else {
+                                                var headerHeight = $('#top').height();
+                                                $('html, body').animate({ scrollTop: (headerHeight + 8) }, 150);
+                                            }
                                         }
                                     )
                                 ;
