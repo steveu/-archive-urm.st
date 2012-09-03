@@ -43,7 +43,13 @@
 				</span>
 			</figure>
 			<p><?=$item->quote()?></p>
-			<cite><?=$item->author()?> - <?=$item->company()?></cite>	
+			<cite>
+				<strong><?=$item->author()?></strong>, <?=$item->job()?>
+				-
+				<a href="<?=$item->link()?>">
+					<?=$item->company()?>
+				</a>
+			</cite>	
 		</blockquote>
 	<?php endforeach; ?>
 

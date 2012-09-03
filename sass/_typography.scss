@@ -104,7 +104,13 @@ blockquote {
 			position: relative;
 			
 		}
-
+	}
+	p {
+		font-style: italic;
+	}
+	cite {
+		display: block;
+		padding-top: rhythm(0.5);
 	}
 }
 
