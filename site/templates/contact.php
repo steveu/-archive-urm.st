@@ -30,11 +30,11 @@
 				</dl>
 
 				<nav class="icon-links">
-					<a class="no-ajaxy microformat" href="/assets/steve_urmston.vcf"></a>
+					<a class="no-ajaxy microformat" href="/assets/steve_urmston.vcf"><em><span></span>Download Vcard</em></a>
 
-					<a class="twitter" href="https://twitter.com/steveu" data-icon="&#x23;"></a>
-					<a class="dribbble" href="http://dribbble.com/steveu" data-icon="&#x22;"></a>
-					<a class="github" href="https://github.com/steveu" data-icon="&#x24;"></a>
+					<a class="twitter" href="https://twitter.com/steveu" data-icon="&#x23;"><em><span></span>Follow on Twitter</em></a>
+					<a class="dribbble" href="http://dribbble.com/steveu" data-icon="&#x22;"><em><span></span>Follow on Dribbble</em></a>
+					<a class="github" href="https://github.com/steveu" data-icon="&#x24;"><em><span></span>Follow on Github</em></a>
 				</nav>
 
 				<span class="left"></span>

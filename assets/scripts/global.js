@@ -20,6 +20,8 @@
             $content = $body.find('#page'),
             rootUrl = History.getRootUrl(),
             nav = $body.find('#top nav.main');
+
+        document.head || (document.head = document.getElementsByTagName('head')[0]);
         
         // Ensure Content
         if ( $content.length === 0 ) {
@@ -105,6 +107,14 @@
                     .addClass('active')
                 ;
 
+                //document.head.remove();
+
+                var favicon = document.getElementById('favicon');
+                favicon.href = "/assets/favicons/" + urlParts[0] + ".png";
+
+                // update the favicon
+                //$("#favicon").attr("href","/assets/favicons/" + urlParts[0] + ".png");
+
             }
 
             $content
@@ -163,6 +173,8 @@
                                                     $('html, body').animate({ scrollTop: (headerHeight + 8) }, 150);
                                                 }
                                             }
+
+
                                         }
                                     )
                                 ;
@@ -181,6 +193,18 @@
             
 
         }); // end onStateChange
+    
+
+        // add class to bounding box when hovering the vcard link
+        var hcard = $('aside.hcard');
+        hcard.find('a.microformat').hover(
+            function() {
+                hcard.addClass('download');
+            },
+            function() {
+                hcard.removeClass('download');
+            }
+        );
 
     }); // end onDomLoad
 

@@ -82,6 +82,9 @@ hr {
 
 blockquote {
 	padding: rhythm(1) 0 0 0;
+
+	 quotes: "\201C" "\201D";
+
 	figure {
 		@include span-columns(3,10);
 
@@ -107,6 +110,15 @@ blockquote {
 	}
 	p {
 		font-style: italic;
+		@include span-columns(7 omega,10);
+
+		&:before, &:after {
+			color: #999;
+		}
+
+		&:before { content: open-quote; }
+ 		&:after { content: close-quote; }
+
 	}
 	cite {
 		display: block;

@@ -48,8 +48,9 @@
 			</figure>
 			<p><?=$item->quote()?></p>
 			<cite>
-				<strong><?=$item->author()?></strong>, <?=$item->job()?>
-				-
+				<strong><?=$item->author()?></strong>
+				&#8211;
+				<?=$item->job()?>,
 				<a href="<?=$item->link()?>">
 					<?=$item->company()?>
 				</a>

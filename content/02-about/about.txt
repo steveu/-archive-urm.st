@@ -6,12 +6,10 @@ Fragment: about
 ----
 Text:
 
-I've worn many hats in 9 years making websites, developing a well-rounded design skillset. Whilst I have a particular focus on interaction &amp; interface design, I can contribute effectively at various stages of the design-process; from user research through to polished products. 
+I've worn many hats in over eight years making websites, developing a well-rounded design skillset. Whilst I have a focus on interaction and interface design (with a <a href="http://www.cs.york.ac.uk/postgraduate/taught-courses/msc-hcit/">Masters degree in <abbr title="Human Computer Interaction">HCI</aabr></a>), I'm an effective contributor throughout a design-process; from user research through to polished products. 
 
-I'm an expert in front-end web development for desktop &amp; mobile using HTML, CSS and JavaScript. I keep myself bang up to date and have experience of responsive design, advanced HTML5 and CSS3, toolkits such as <a href="http://sass-lang.com/">SASS</a> and <a href="http://compass-style.org/">Compass</a>, and server side JavaScript using <a href="http://nodejs.org/">node.js</a>.
+Technically I have expert skills in front-end web development for desktop &amp; mobile using HTML, CSS and JavaScript. I keep myself bang up to date with new techniques and technologies including responsive design, advanced HTML5 and CSS3, toolkits such as <a href="http://sass-lang.com/">SASS</a> and <a href="http://compass-style.org/">Compass</a>, and server side JavaScript using <a href="http://nodejs.org/">node.js</a>.
 
-I'm highly experienced using PHP with knowledge of many popular frameworks and CMS systems (<a href="http://getkirby.com/">Kirby</a>, <a href="http://grabaperch.com/">Perch</a>, <a href="http://wordpress.org/">Wordpress</a>, <a href="http://codeigniter.com/">CodeIgnitor</a> and ), but also comfortable developing OOP systems myself. I have some experience using Ruby (Rails), good knowledge of Git, and can (just about) maintain Linux based servers.
-
-## What's next?
+I'm highly experienced in PHP with knowledge of many popular frameworks and CMS systems (<a href="http://getkirby.com/">Kirby</a>, <a href="http://grabaperch.com/">Perch</a>, <a href="http://wordpress.org/">Wordpress</a>, <a href="http://codeigniter.com/">CodeIgnitor</a>), but also comfortable developing OOP systems myself. I have some experience using Ruby (Rails), good knowledge of Git, and can (up to a point) maintain Linux based servers.
 
 I'm available for contract and freelance work, either remotely, or on site, so f you think I'd be a good fit for your business; please do <a href="/contact">get in touch</a>. I'd love to chat!

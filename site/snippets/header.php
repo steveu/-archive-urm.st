@@ -37,7 +37,7 @@
     </script>
 
     <!-- look nice in a browser tab -->
-    <link rel="icon shortcut" href="/favicon.ico" type="image/vnd.microsoft.com" />
+    <link rel="icon shortcut" id="favicon" href="/assets/favicons/<?=$page->fragment()?>.png" />
 
     <!-- When (if) I add IE specific code, this will be useful -->
     <?php echo js('assets/scripts/libs/modernizr.custom.89936.js') ?>
