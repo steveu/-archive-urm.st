@@ -24,7 +24,7 @@ Slides from my 10 minute presentation are below.
 But if you fancy all 25,000 words (plus some nice diagrams!) then by all means;
 
 <p class="options">
-	<a class="button pdf" href="">Download the PDF</a>
+	<a class="button pdf no-ajaxy" href="/assets/documents/game_mechanics_vle.pdf">Download the PDF</a>
 </p>
 
 ----
