@@ -9,6 +9,10 @@
 				<figure>
 					<?php $image = $item->images()->find('screenshot.png') ?>
 					<img src="<?php echo $image->url() ?>" />
+					<figcaption>
+						<h2>View Project</h2>
+						<span></span>
+					</figpation>
 				</figure>
 
 				<h2><?php echo html($item->title()) ?></h2>

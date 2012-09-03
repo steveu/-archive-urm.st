@@ -17,6 +17,10 @@
 					<figure>
 						<?php $image = $item->images()->find('screenshot.png') ?>
 						<img src="<?php echo $image->url() ?>" alt="<?=$item->title()?>" />
+						<figcaption>
+							<h2><?=$item->title()?></h2>
+							<span></span>
+						</figpation>
 					</figure>
 				</a>	
 			</article>
