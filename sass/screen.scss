@@ -859,7 +859,7 @@ section.contact {
 	}
 }
 
-aside.hcard {
+aside.vcard {
 	padding: rhythm(1) rhythm(1) rhythm(1.5) ;
 	background: #fff;
 	@include pie-clearfix;
@@ -894,6 +894,12 @@ aside.hcard {
 	figure {
 		max-width: 128px;
 		margin-bottom: rhythm(1);
+
+		figcaption {
+			text-indent: -99999px;
+			width: 0px;
+			height: 0px;
+		}
 		@media screen and (min-width: 321px) {
 
 			@include span-columns(2,8);
@@ -943,6 +949,15 @@ aside.hcard {
 		@include span-columns(7, 8);
 		@media screen and (min-width: 321px) {
 			@include span-columns(5, 8);
+		}
+
+		dd.email-im {
+			span.url {
+				display: block;
+				text-indent: -99999px;
+				width: 0px;
+				height: 0px;
+			}
 		}
 	}
 

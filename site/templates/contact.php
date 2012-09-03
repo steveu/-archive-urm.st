@@ -8,24 +8,29 @@
 
 		<div class="content">
 		
-			<aside class="hcard">
+			<aside class="vcard" id="hcard-Steve-Urmston">
 
 				<figure>
 					<div>
 						<img src="/assets/images/avatar.jpg" alt="Steven Urmston" />
 					</div>
+					<figcaption class="fn">Steve Urmston</figcaption>
 				</figure>
 
 				<dl>
 					<dt>Email / IM:</dt>
-					<dd><?php echo str::email('steve@urm.st'); ?></dd>
+					<dd class="email-im">
+						<span class="email"><?php echo str::email('steve@urm.st'); ?></span>
+						<span class="url" href="xmpp:steve@urm.st">Jabber</span>
+					</dd>
 					<dt>Skype:</dt>
 					<dd>steveurmston</dd>
 					<dt>Post:</dt>
-					<dd>65 Beaconsfield Street,<br />
-						Acomb,<br />
-						York,
-						YO24 4NB
+					<dd class="adr">
+						<span class="street">65 Beaconsfield Street,<br />
+						Acomb,<br /></span>
+						<span class="locality">York</span>,
+						<span class="postal-code">YO24 4NB</span>
 					</dd>
 				</dl>
 
