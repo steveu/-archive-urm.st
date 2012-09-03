@@ -81,9 +81,9 @@ hr {
 }
 
 blockquote {
-	padding: rhythm(1) 0;
+	padding: rhythm(1) 0 0 0;
 	figure {
-		@include span-columns(2,8);
+		@include span-columns(3,10);
 
 		span {
 			display: block;
@@ -111,6 +111,7 @@ blockquote {
 	cite {
 		display: block;
 		padding-top: rhythm(0.5);
+		clear: both;
 	}
 }
 

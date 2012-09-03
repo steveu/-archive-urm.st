@@ -96,6 +96,8 @@ body {
 
 	//-webkit-transform: translate3d( 0, 0, 0);
 
+	font-weight: 400;
+
 	&:before {
 		content: "";
 		position: fixed;
@@ -417,16 +419,30 @@ section.testimionials {
 		@include span-columns(10,12);
 		@include squish(1,1);
 	}
-	@media screen and (min-width: 769px) {
-		@include span-columns(8,12);
-		@include squish(2,2);
+	@media screen and (min-width: 720px) {
+		@include span-columns(12,12);
+		@include squish(0,0);
+
+		blockquote {
+			@include span-columns(6,12);
+
+			&:nth-child(even) { @include omega; }
+			min-height: 12em;
+
+			p {
+				padding-right: rhythm(1);
+			}
+		}
 	}
 
 	h1 {
 		padding-top: rhythm(0.5);
+		padding-bottom: rhythm(0.25);
 		text-align: center;
-		padding-bottom: 0;
+		//padding-bottom: 0;
 	}
+
+	
 }
 
 //	******************************************************************

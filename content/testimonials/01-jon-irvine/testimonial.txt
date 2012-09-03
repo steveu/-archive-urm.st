@@ -10,4 +10,4 @@ Link: http://designition.co.uk/
 ----
 Quote:
 
-Steve is a talented and knowledgeable designer with an attention to detail. It's a pleasure working with him.
+Steve is a talented and knowledgeable designer and developer with an attention to detail. It's a pleasure working with him.

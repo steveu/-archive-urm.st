@@ -8,11 +8,9 @@ Text:
 
 I've worn many hats in 9 years making websites, developing a well-rounded design skillset. Whilst I have a particular focus on interaction &amp; interface design, I can contribute effectively at various stages of the design-process; from user research through to polished products. 
 
-## Geek speak
-
 I'm an expert in front-end web development for desktop &amp; mobile using HTML, CSS and JavaScript. I keep myself bang up to date and have experience of responsive design, advanced HTML5 and CSS3, toolkits such as <a href="http://sass-lang.com/">SASS</a> and <a href="http://compass-style.org/">Compass</a>, and server side JavaScript using <a href="http://nodejs.org/">node.js</a>.
 
-I'm highly experienced using PHP with knowledge of many popular frameworks and CMS systems, but also comfortable developing OOP systems myself. I have some experience using Ruby (Rails), good knowledge of Git, and can (just about) maintain Linux based servers.
+I'm highly experienced using PHP with knowledge of many popular frameworks and CMS systems (<a href="http://getkirby.com/">Kirby</a>, <a href="http://grabaperch.com/">Perch</a>, <a href="http://wordpress.org/">Wordpress</a>, <a href="http://codeigniter.com/">CodeIgnitor</a> and ), but also comfortable developing OOP systems myself. I have some experience using Ruby (Rails), good knowledge of Git, and can (just about) maintain Linux based servers.
 
 ## What's next?
 

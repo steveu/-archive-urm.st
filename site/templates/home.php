@@ -30,9 +30,9 @@
 
 
 <section class="testimionials">
-	<h1>Letterbox screenshots not enough?</h1>
+	<h1>What? Letterbox screenshots not enough?</h1>
 	<?php $testimonials = $pages->findByTitle('Testimonials'); ?>
-	<?php $items = $testimonials->children()->visible()->flip(); ?>
+	<?php $items = $testimonials->children()->visible(); ?>
 
 	<?php foreach($items AS $item): ?>
 		<blockquote>
