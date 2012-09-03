@@ -6,7 +6,7 @@ Fragment: about
 ----
 Text:
 
-I've worn many hats in my 9 years making websites; for various agencies, clients and myself, and I've developed a well-rounded design skillset. Whilst I have a particular focus on interaction &amp; interface design, I'm an accomplished contributor to a team design-process from user research through to polished products. 
+I've worn many hats in 9 years making websites, developing a well-rounded design skillset. Whilst I have a particular focus on interaction &amp; interface design, I can contribute effectively at various stages of the design-process; from user research through to polished products. 
 
 ## Geek speak
 
