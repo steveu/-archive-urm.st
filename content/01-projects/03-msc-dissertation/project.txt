@@ -4,6 +4,8 @@ id: msc-dissertation
 ----
 Date: 01-02-2009
 ----
+Client: Self
+----
 Intro:
 
 My dissertation project involved building a custom VLE and investigating the effects of adding game mechanics.

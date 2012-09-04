@@ -15,9 +15,21 @@
 					
 	<div class="padding">
 		
-		<time datetime="<?php echo $page->date('c') ?>" pubdate="pubdate">
-			<?php echo $page->date('F Y') ?>
-		</time>
+		<p class="meta">
+			Date:
+			<time datetime="<?php echo $page->date('c') ?>" pubdate="pubdate"><?php echo $page->date('F Y') ?></time>
+			&#8211;
+			Client:
+			<?php if ($page->clientlink()) echo '<a href="' . $page->clientlink() . '">'; ?>
+			<?=$page->client?>
+			<?php if ($page->clientlink()) echo '</a>'; ?>
+			&#8211;
+			Work:<em class="tags">
+			<?php foreach ($tags = explode(",", $page->tags()) as $tag) : ?>
+				<span><?=$tag?></span>
+			<?php endforeach; ?>
+			</em>
+		</p>
 
 		<?php echo kirbytext($page->text()) ?>
 

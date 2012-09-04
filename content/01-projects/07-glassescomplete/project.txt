@@ -6,6 +6,10 @@ Date: 05-10-2010
 ----
 Link: glassescomplete.co.uk
 ----
+Client: Designition
+----
+ClientLink: http://designition.co.uk/
+----
 Intro:
 
 I wireframed this complex E-commerce site and did the vast majority of frontend development.

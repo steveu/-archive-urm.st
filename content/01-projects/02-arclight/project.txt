@@ -6,6 +6,10 @@ Date: 01-11-2008
 ----
 Link: york-arclight.co.uk
 ----
+Client: Designition
+----
+ClientLink: http://designition.co.uk/
+----
 Intro:
 
 Innovative (for it's time) JavaScript driven site for a homeless shelter in York. Design &amp; build by me.
