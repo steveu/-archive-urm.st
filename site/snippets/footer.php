@@ -7,7 +7,7 @@
             <div class="wrapper">
 
                 <p class="contact">
-                    Find me on <a href="http://twitter.com/steveu">Twitter</a>, <a href="http://dribbble.com/steveu">Dribbble</a>, <a href="http://github.com/steveu">GitHub</a>, <a href="http://uk.linkedin.com/in/steveurmston">LinkedIn</a> and <a href="http://zerply.com/steveu">Zerply</a>. Send email to <a href="mailto:&#x73;&#116;&#x65;&#x76;&#101;&#64;&#117;&#114;&#109;&#x2e;&#115;&#x74;">&#x73;&#x74;&#101;&#118;&#x65;&#x40;&#x75;&#x72;&#x6d;&#x2e;&#115;&#x74;</a>.
+                    Find me on <a class="twitter" href="http://twitter.com/steveu"><span data-icon="&#x23;"></span>Twitter</a>, <a class="dribbble" href="http://dribbble.com/steveu"><span data-icon="&#x22;"></span>Dribbble</a>, <a class="github" href="http://github.com/steveu"><span data-icon="&#x39;"></span>GitHub</a> and <a class="linkedin" href="http://uk.linkedin.com/in/steveurmston"><span data-icon="&#x3a;"></span>LinkedIn</a>. Send email to <a href="mailto:&#x73;&#116;&#x65;&#x76;&#101;&#64;&#117;&#114;&#109;&#x2e;&#115;&#x74;"><span data-icon="&#x3b;"></span>&#x73;&#x74;&#101;&#118;&#x65;&#x40;&#x75;&#x72;&#x6d;&#x2e;&#115;&#x74;</a>.
                 </p>
 
                 <p class="copyright">

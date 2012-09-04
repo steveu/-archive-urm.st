@@ -19,7 +19,6 @@
 			<?php echo $page->date('F Y') ?>
 		</time>
 
-
 		<?php echo kirbytext($page->text()) ?>
 
 		<?php if ($page->link()) : ?>

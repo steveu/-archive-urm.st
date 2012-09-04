@@ -196,13 +196,13 @@
     
 
         // add class to bounding box when hovering the vcard link
-        var hcard = $('aside.hcard');
-        hcard.find('a.microformat').hover(
+        var vcard = $('aside.vcard');
+        vcard.find('a.microformat').hover(
             function() {
-                hcard.addClass('download');
+                vcard.addClass('download');
             },
             function() {
-                hcard.removeClass('download');
+                vcard.removeClass('download');
             }
         );
 
