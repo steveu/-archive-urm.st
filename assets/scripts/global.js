@@ -193,18 +193,15 @@
             
 
         }); // end onStateChange
-    
-
+        
         // add class to bounding box when hovering the vcard link
+        /*
         var vcard = $('aside.vcard');
-        vcard.find('a.microformat').hover(
-            function() {
-                vcard.addClass('download');
-            },
-            function() {
-                vcard.removeClass('download');
-            }
-        );
+
+        $(document).on("hover", "a.microformat", function(){
+            vcard.toggleClass('download');
+        });       
+        */
 
     }); // end onDomLoad
 
