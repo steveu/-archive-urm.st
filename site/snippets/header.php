@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
+    <title><?php echo html($page->title()) ?> - <?php echo html($site->title()) ?></title>
 
     <meta name="description" content="<?= ($page->description()) ? html($page->description()) : html($site->description()) ?>" />
     <meta name="author" content="<?= $site->author() ?>">
