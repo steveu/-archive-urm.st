@@ -19,7 +19,8 @@
             $body = $(document.body),
             $content = $body.find('#page'),
             rootUrl = History.getRootUrl(),
-            nav = $body.find('#top nav.main');
+            nav = $body.find('#top nav.main'),
+            favicon = document.getElementById('favicon');
 
         document.head || (document.head = document.getElementsByTagName('head')[0]);
         
@@ -109,13 +110,15 @@
 
                 //document.head.remove();
 
-                var favicon = document.getElementById('favicon');
-                favicon.href = "/assets/favicons/" + urlParts[0] + ".png";
+                
+                
 
                 // update the favicon
                 //$("#favicon").attr("href","/assets/favicons/" + urlParts[0] + ".png");
 
             }
+
+            
 
             $content
         
@@ -136,16 +139,20 @@
                                 
                                 var $data = $(documentHtml(data));
 
+                                // page title
+                                document.title = $data.find('.document-title:first').text();
+                                try {
+                                    document.getElementsByTagName('title')[0].innerHTML = document.title.replace('<','&lt;').replace('>','&gt;').replace(' & ',' &amp; ');
+                                }
+                                catch ( Exception ) { }
+
+
+                                favicon.href = "/assets/favicons/" + urlParts[0] + ".png";
+
                                 // get page content
                                 var new_content = $data.find('#page').html();
 
                                 _gaq.push(['_trackPageview', relativeUrl]);
-
-
-                                if ($content.hasClass('left')) {
-
-
-                                }
 
                                 $content
                                     .transition(
