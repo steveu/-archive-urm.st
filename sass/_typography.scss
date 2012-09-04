@@ -113,10 +113,16 @@ blockquote {
 		@include span-columns(7 omega,10);
 
 		&:before, &:after {
-			color: #999;
+			//color: #999;
 		}
 
-		&:before { content: open-quote; }
+		position: relative;
+		&:before {
+			content: open-quote;
+			position: absolute;
+			top: 0px;
+			left: -0.5em;
+		}
  		&:after { content: close-quote; }
 
 	}

@@ -14,8 +14,30 @@
     <!-- I can scale myself -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
+    <!-- But I need help if you switch orientation. STILL Apple, still. -->
+    <script type="text/javascript">
+        (function(doc) {
+            var addEvent = 'addEventListener',
+            type = 'gesturestart',
+            qsa = 'querySelectorAll',
+            scales = [1, 1],
+            meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+            function fix() {
+                meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+                doc.removeEventListener(type, fix, true);
+            }
+
+            if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+                fix();
+                scales = [.25, 1.6];
+                doc[addEvent](type, fix, true);
+            }
+        }(document));
+    </script>
+
     <!-- look nice in a browser tab -->
-    <link rel="icon shortcut" href="/favicon.ico" type="image/vnd.microsoft.com" />
+    <link rel="icon shortcut" id="favicon" href="/assets/favicons/notes.png" />
 
     <!-- When (if) I add IE specific code, this will be useful -->
     <script src="/assets/scripts/libs/modernizr.custom.89936.js"></script>
@@ -261,7 +283,7 @@ box-sizing: border-box;
             <div class="wrapper">
 
                 <p class="contact">
-                    Find me on <a href="http://twitter.com/steveu">Twitter</a>, <a href="http://dribbble.com/steveu">Dribbble</a>, <a href="http://github.com/steveu">GitHub</a> and <a href="http://uk.linkedin.com/in/steveurmston">LinkedIn</a>. Send email to <a href="mailto:&#x73;&#116;&#x65;&#x76;&#101;&#64;&#117;&#114;&#109;&#x2e;&#115;&#x74;">&#x73;&#x74;&#101;&#118;&#x65;&#x40;&#x75;&#x72;&#x6d;&#x2e;&#115;&#x74;</a>.
+                    Find me on <a href="http://twitter.com/steveu">Twitter</a>, <a href="http://dribbble.com/steveu">Dribbble</a>, <a href="http://github.com/steveu">GitHub</a>, <a href="http://uk.linkedin.com/in/steveurmston">LinkedIn</a> and <a href="http://zerply.com/steveu">Zerply</a>. Send email to <a href="mailto:&#x73;&#116;&#x65;&#x76;&#101;&#64;&#117;&#114;&#109;&#x2e;&#115;&#x74;">&#x73;&#x74;&#101;&#118;&#x65;&#x40;&#x75;&#x72;&#x6d;&#x2e;&#115;&#x74;</a>.
                 </p>
 
                 <p class="copyright">
