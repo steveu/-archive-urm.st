@@ -57,6 +57,21 @@
             return result;
         };
         
+        // Change Favicon
+        var changeFavicon = function(src) {
+            var
+                link = document.createElement('link'),
+                oldLink = document.getElementById('favicon');
+                link.id = 'favicon';
+                link.rel = 'shortcut icon';
+                link.href = src;
+
+            if (oldLink) {
+                document.head.removeChild(oldLink);
+            }
+            document.head.appendChild(link);
+        }
+
         // Ajaxify Helper
         $.fn.ajaxify = function(){
 
@@ -146,8 +161,10 @@
                                 }
                                 catch ( Exception ) { }
 
+                                changeFavicon("/assets/favicons/" + urlParts[0] + ".png");
 
-                                favicon.href = "/assets/favicons/" + urlParts[0] + ".png";
+                                //favicon.href = "/assets/favicons/" + urlParts[0] + ".png";
+
 
                                 // get page content
                                 var new_content = $data.find('#page').html();

@@ -14,8 +14,12 @@
 				<?php echo $item->date('j F Y') ?>
 			</time>
 			<?php echo kirbytext($item->text()) ?>
-		
+			
+
+			<p class="twitter">Formed an opinion? <a class="social twitter" href="http://twitter.com/steveu"><span data-icon="&#x23;"></span>I'm @steveu on Twitter</a></p>
 		</div>
+
+
 
 	</article>
 
