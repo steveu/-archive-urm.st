@@ -16,7 +16,7 @@
 			<?php echo kirbytext($item->text()) ?>
 			
 
-			<p class="twitter">Formed an opinion? <a class="social twitter" href="http://twitter.com/steveu"><span data-icon="&#x23;"></span>I'm @steveu on Twitter</a></p>
+			<p class="twitter">Any chat for me? <a class="social twitter" href="http://twitter.com/steveu"><span data-icon="&#x23;"></span>I'm @steveu on Twitter</a></p>
 		</div>
 
 
