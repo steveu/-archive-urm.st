@@ -1,0 +1,90 @@
+Title: Looping Sass Arrays
+----
+Date: 17-09-2012
+----
+When: evening
+----
+Temp: cold
+----
+Weather: cloudy
+----
+Location: York
+----
+Text:
+
+Whilst I prefer a fluid approach to website building, occasionally something more rigid is required. In these happy times I turn to a handy technique using a few fudged Sass/SCSS associative arrays (*technically multiple [lists](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#lists)*) to easily maintain those fiddly fixed-width menus.
+
+Given some HTML hooks;
+
+<pre>
+<code>&lt;nav&gt;
+	&lt;ul&gt;
+		&lt;li class=&quot;home&quot;&gt;&lt;a href=&quot;/home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;about&quot;&gt;&lt;a href=&quot;/about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;blog&quot;&gt;&lt;a href=&quot;/blog&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;contact&quot;&gt;&lt;a href=&quot;/contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</code>
+</pre>
+
+We create our SCSS lists like so&hellip; (it's helpful to tab line everything up)
+
+<pre>
+<code>$nav_section: home about blog contact;
+$nav_widths: 80 120 100 140;
+$nav_colors: red yellow blue green;</code>
+</pre>
+
+Then using a loop with a counter to reference those different collections using <code>nth()</code>, we can set the width, change the colour, or nudge the background position of a sprite.
+
+<pre>
+<code>$i:1;
+$bg_position: 0;
+
+nav {
+	li {
+		@each $section in $nav_section {
+
+			&.#{$section} a {
+				width: nth($nav_widths, $i) + px;
+				background-color: nth($nav_colors, $i);
+				background-position: -$bg_position + px 0px;
+			}
+			// add width to position counter
+			$bg_position: $bg_position + nth($nav_widths, $i);
+
+			$i: $i+1;
+		}
+	}
+}</code>
+</pre>
+
+Producing the following CSS
+
+<pre>
+<code>nav li.home a {
+  width: 80px;
+  background-color: red;
+  background-position: 0px 0px;
+}
+nav li.about a {
+  width: 120px;
+  background-color: yellow;
+  background-position: -80px 0px;
+}
+nav li.blog a {
+  width: 100px;
+  background-color: blue;
+  background-position: -200px 0px;
+}
+nav li.contact a {
+  width: 140px;
+  background-color: green;
+  background-position: -300px 0px;
+}</code>
+</pre>
+
+I've whacked this code in a gist for easy consumption;
+[https://gist.github.com/3737271](https://gist.github.com/3737271)
+
+----

@@ -1,0 +1,47 @@
+/*
+Given the following html
+<nav>
+	<ul>
+		<li class="home"><a>Home</a></li>
+		<li class="about"><a>About</a></li>
+		<li class="blog"><a>Blog</a></li>
+		<li class="contact"><a>Contact</a></li>
+	</ul>
+</nav>
+*/
+
+/*
+Create collections with corresponding items
+*/
+$nav_section: home about blog contact;
+$nav_widths: 80 120 100 140;
+$nav_colors: red yellow blue green;
+
+
+/*
+Then using a loop and referencing the separate collection using nth 
+create an approximation of an associative array
+*/
+
+nav {
+
+	li {
+		$i:1; // count
+		$bg_position: 0; // background position count (only for BG img)
+
+		@each $section in $nav_section {
+			&.#{$section} a {
+				width: nth($nav_widths, $i) + px;
+				background-color: nth($nav_colors, $i);
+
+				// if using a background image
+				background-position: -$bg_position + px 0px;
+			}
+			// add width to position counter
+			$bg_position: $bg_position + nth($nav_widths, $i);
+
+			// iterate count
+			$i: $i+1;
+		}
+	}
+}
