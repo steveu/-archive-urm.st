@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title><?php echo html($page->title()) ?> - <?php echo html($site->title()) ?></title>
+    <title><?php if ($page->title() != '') echo html($page->title()) . ' - ' ?><?php echo html($site->title()) ?></title>
 
     <meta name="description" content="<?= ($page->description()) ? html($page->description()) : html($site->description()) ?>" />
     <meta name="author" content="<?= $site->author() ?>">
@@ -14,7 +14,7 @@
     <!-- I can scale myself -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!-- But I need help if you switch orientation. STILL Apple, still. -->
+    <!-- STILL Apple, still. -->
     <script type="text/javascript">
         (function(doc) {
             var addEvent = 'addEventListener',
@@ -46,7 +46,7 @@
     <script type="text/javascript" src="http://use.typekit.com/mqf3dsx.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     
-    <!-- CSS compressed SASS - source at https://github.com/clearbar/clearbar/blob/master/sass/screen.scss -->
+    <!-- CSS compressed SASS - source at https://github.com/steveu/urm.st/tree/master/sass -->
     <?php echo css('assets/styles/screen.css') ?>
 
 </head>
