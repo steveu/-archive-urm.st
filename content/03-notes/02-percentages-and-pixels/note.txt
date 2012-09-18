@@ -26,8 +26,6 @@ The obvious CSS for a liquid layout might be something like this;
 		padding-left: 10%;
 		float: left;
 	}
-
-<a href="/content/03-notes/02-percentages-and-pixels/demo1.html" class="button demo">View demo</a>
 	
 The problem being; at iPad size the gap between columns is too small, and on your shiny new cinema display, it's gonna be too damn big!
 
@@ -49,7 +47,6 @@ What we actually need is the IE6 box model in (link: http://www.quirksmode.org/c
 		width: 70%;
 	}
 
-<a href="/content/03-notes/02-percentages-and-pixels/demo2.html" class="button demo">View demo</a>
 
 _This_ is gonna to give us a liquid layout, with fixed pixel gutters.
 
@@ -91,7 +88,6 @@ My personal preference however is to set gutters in ems, and control the gutter 
 		float: left;
 	}
 
-<a href="/content/03-notes/02-percentages-and-pixels/demo3.html" class="button demo">View demo</a>
 
-Boom. Go build.
+Boom.
 ----
