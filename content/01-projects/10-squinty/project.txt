@@ -1,0 +1,37 @@
+Title: Squinty
+----
+id: squinty
+----
+Date: 21-09-2012
+----
+Client: Self
+----
+Intro:
+
+I buult a simple Chrome extension which helps you take a different look at website as you design them.
+
+----
+Text:
+
+A recent [A List Apart article on Artistic Distance](http://www.alistapart.com/articles/artistic-distance/) got me a thinking; As much of my designing is done in the browser (for better or worse) I could use a tool that lets me quickly take a different look at the things I’m making.
+
+I did a quick sketch on the iPad (at the time being infatuated with [Paper](http://www.fiftythree.com/paper)) and toyed with the name *Perspective*. Maybe the poncey name put me off as it was shoved on the backburner, whilst I dealt with self employment.
+
+<figure class="center">(image: squinty_paper_sketch.png)</figure>
+
+I had another bash refining the concept last week (*this is why I’m self employed*) also coming up with the name *Squinty*.
+
+<figure class="center">(image: squinty_sketchbook.jpg)</figure>
+
+Better name in place; I’ve spent the last couple of days developing the concept and I'm happy to say I built a pretty decent [prototype Chrome extension](https://github.com/steveu/squinty). It’s currently only available on Github and isn't tested beyond the latest and greatest version.
+
+I'm sure I’ll get around to submitting the Chrome store but in the meantime; hope somebody finds it useful. Any feedback much appreciated :)
+
+<p class="options">
+	<a class="button pdf no-ajaxy" href="https://github.com/steveu/squinty">View/Install on Github</a>
+</p>
+
+
+----
+Tags: Design, Front-end
+----
