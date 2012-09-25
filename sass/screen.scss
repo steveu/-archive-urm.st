@@ -1160,9 +1160,11 @@ aside.vcard {
 a.social {
 	
 	font-style: normal;
-	display: inline-block;
+	//display: inline-block;
 	white-space: nowrap;
 	border: none;
+	line-height: 30px;
+	
 	span {
 		display: inline-block;
 		@include scale(0);
@@ -1232,6 +1234,7 @@ a.social {
 		@extend .social;
 		border: none;
 		color: #777;
+		line-height: 30px;
 	}
 
 	p.copyright {
