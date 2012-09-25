@@ -8,10 +8,18 @@
 
 	</div>
 
-	<figure class="folio">
+	<?php if ($page->id() == 'squinty') : ?>
+	<figure class="squinty">
 		<?php $image = $page->images()->find('screenshot.png') ?>
 		<img src="<?php echo $image->url() ?>" alt="Project screenshot" />
 	</figure>
+
+	<?php else : ?>
+		<figure class="folio">
+			<?php $image = $page->images()->find('screenshot.png') ?>
+			<img src="<?php echo $image->url() ?>" alt="Project screenshot" />
+		</figure>
+	<?php endif; ?>
 					
 	<div class="padding">
 		
